@@ -1,0 +1,2677 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO & Métadonnées Essentielles -->
+  <title>AME BAC AK BFEM | Plateforme E-Learning d'Élite pour Écoles Privées au Sénégal</title>
+  <meta name="description" content="Propulsez les taux de réussite de votre école privée au BFEM et au Baccalauréat. Solution e-learning conforme au programme officiel du Sénégal (6ème à Terminale). Démo gratuite pour directeurs et promoteurs.">
+  <meta name="keywords" content="AME BAC AK BFEM, cours en ligne Sénégal, BFEM, Baccalauréat Sénégal, école privée Dakar, révision Sénégal, e-learning Afrique, Wave, Orange Money, soutien scolaire Sénégal">
+  <meta name="author" content="AME BAC AK BFEM">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Réseaux Sociaux -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://amebacakbfem.sn/">
+  <meta property="og:title" content="AME BAC AK BFEM - La garantie de réussite pour votre école">
+  <meta property="og:description" content="Plateforme e-learning de la 6ème à la Terminale, conforme au programme officiel sénégalais. Tableau de bord direction, espace parents WhatsApp, mode basse consommation.">
+  <meta property="og:image" content="./assets/images/students-hero.jpg">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="AME BAC AK BFEM | Excellence Scolaire au Sénégal">
+  <meta property="twitter:description" content="Cours vidéo, annales corrigées, quiz et suivi en temps réel pour collèges et lycées sénégalais.">
+  
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              red: '#D62828',
+              darkred: '#9B1C1C',
+              lightred: '#FDECEC',
+              mutedred: '#FFE5E5',
+              dark: '#111317',
+              carddark: '#1A1D24',
+              borderdark: '#2A303C',
+              charcoal: '#1F1F1F',
+              grey: '#6B6B6B'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['Plus Jakarta Sans', 'sans-serif'],
+          },
+          boxShadow: {
+            'subtle-red': '0 10px 30px -5px rgba(214, 40, 40, 0.15)',
+            'glow-red': '0 0 35px rgba(214, 40, 40, 0.35)',
+            'card-soft': '0 15px 35px -5px rgba(0, 0, 0, 0.05)',
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-8px)' },
+            },
+            pulseSubtle: {
+              '0%, 100%': { opacity: '1', transform: 'scale(1)' },
+              '50%': { opacity: '0.85', transform: 'scale(1.03)' },
+            }
+          },
+          animation: {
+            'float': 'float 5s ease-in-out infinite',
+            'pulse-subtle': 'pulseSubtle 2.5s ease-in-out infinite',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Données Structurées JSON-LD (EducationalOrganization & SoftwareApplication) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "EducationalOrganization",
+        "@id": "https://amebacakbfem.sn/#organization",
+        "name": "AME BAC AK BFEM",
+        "url": "https://amebacakbfem.sn",
+        "logo": "https://amebacakbfem.sn/assets/images/logo.png",
+        "description": "Plateforme éducative de cours en ligne pour les écoles privées du Sénégal, de la 6ème à la Terminale.",
+        "telephone": "+221766297742",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Almadies, Route de Ngor",
+          "addressLocality": "Dakar",
+          "addressCountry": "SN"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+221766297742",
+          "contactType": "sales",
+          "availableLanguage": ["French", "Wolof"]
+        }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "AME BAC AK BFEM LMS",
+        "applicationCategory": "EducationalApplication",
+        "operatingSystem": "Web, Android, iOS",
+        "offers": {
+          "@type": "Offer",
+          "price": "1500",
+          "priceCurrency": "XOF"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    /* Styles personnalisés & animations fluides */
+    body {
+      font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    }
+    
+    .text-balance {
+      text-wrap: balance;
+    }
+
+    /* Défilement fluide de la bande de logos */
+    @keyframes marquee {
+      0% { transform: translateX(0%); }
+      100% { transform: translateX(-50%); }
+    }
+    .animate-marquee {
+      display: flex;
+      width: 200%;
+      animation: marquee 28s linear infinite;
+    }
+    .animate-marquee:hover {
+      animation-play-state: paused;
+    }
+
+    /* Effet Glassmorphism léger */
+    .glass-nav {
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+
+    /* Badge pulsation radar WhatsApp */
+    @keyframes ping-slow {
+      75%, 100% {
+        transform: scale(1.6);
+        opacity: 0;
+      }
+    }
+    .animate-ping-slow {
+      animation: ping-slow 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+    }
+  </style>
+</head>
+
+<body class="bg-white dark:bg-brand-dark text-brand-charcoal dark:text-gray-100 font-sans antialiased selection:bg-brand-red selection:text-white transition-colors duration-300">
+
+  <!-- ========================================================================= -->
+  <!-- 1. BARRE DE NAVIGATION FIXE                                               -->
+  <!-- ========================================================================= -->
+  <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 glass-nav bg-white/90 dark:bg-brand-dark/90 border-b border-gray-100 dark:border-brand-borderdark" id="mainHeader">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- LOGO OFFICIEL AME BAC AK BFEM -->
+      <a href="#" class="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-brand-red rounded-lg p-1" aria-label="Accueil AME BAC AK BFEM">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-brand-red to-brand-darkred flex items-center justify-center text-white shadow-md shadow-brand-red/20 group-hover:scale-105 transition-transform duration-200">
+          <!-- Icône Toque de diplômé + Étoile de réussite -->
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14v7" />
+          </svg>
+        </div>
+        <div class="flex flex-col">
+          <div class="flex items-center gap-1.5">
+            <span class="font-heading font-extrabold text-xl tracking-tight text-brand-charcoal dark:text-white leading-none">
+              AME <span class="text-brand-red">BAC</span> AK <span class="text-brand-red">BFEM</span>
+            </span>
+          </div>
+          <span class="text-[11px] font-semibold uppercase tracking-wider text-brand-grey dark:text-gray-400 mt-0.5">
+            Excellence & Réussite Éducative 🇸🇳
+          </span>
+        </div>
+      </a>
+
+      <!-- LIENS NAVIGATION DESKTOP -->
+      <nav class="hidden lg:flex items-center gap-8" aria-label="Navigation principale">
+        <a href="#fonctionnalites" class="text-sm font-medium text-brand-charcoal dark:text-gray-200 hover:text-brand-red dark:hover:text-brand-red transition-colors">Fonctionnalités</a>
+        <a href="#niveaux" class="text-sm font-medium text-brand-charcoal dark:text-gray-200 hover:text-brand-red dark:hover:text-brand-red transition-colors">Niveaux & Séries</a>
+        <a href="#profils" class="text-sm font-medium text-brand-charcoal dark:text-gray-200 hover:text-brand-red dark:hover:text-brand-red transition-colors">Pour qui ?</a>
+        <a href="#tarifs" class="text-sm font-medium text-brand-charcoal dark:text-gray-200 hover:text-brand-red dark:hover:text-brand-red transition-colors">Tarifs Écoles</a>
+        <a href="#temoignages" class="text-sm font-medium text-brand-charcoal dark:text-gray-200 hover:text-brand-red dark:hover:text-brand-red transition-colors">Témoignages</a>
+        <a href="#faq" class="text-sm font-medium text-brand-charcoal dark:text-gray-200 hover:text-brand-red dark:hover:text-brand-red transition-colors">FAQ</a>
+      </nav>
+
+      <!-- ACTIONS DESKTOP : Thème sombre + CTA Démo -->
+      <div class="hidden lg:flex items-center gap-4">
+        <!-- Toggle Mode Sombre -->
+        <button id="themeToggleBtn" type="button" aria-label="Basculer le mode sombre" class="p-2.5 rounded-xl text-gray-500 hover:text-brand-charcoal dark:text-gray-400 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-brand-carddark transition-colors">
+          <svg id="themeIconSun" class="w-5 h-5 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+          </svg>
+          <svg id="themeIconMoon" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+          </svg>
+        </button>
+
+        <!-- CTA Principal Header -->
+        <a href="#demo-form" class="inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold rounded-xl text-white bg-brand-red hover:bg-brand-darkred shadow-md shadow-brand-red/25 hover:shadow-lg hover:shadow-brand-red/40 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200">
+          <span>Demander une démo</span>
+          <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          </svg>
+        </a>
+      </div>
+
+      <!-- BOUTON MENU MOBILE (Burger) -->
+      <div class="flex items-center gap-2 lg:hidden">
+        <button id="themeToggleMobile" type="button" aria-label="Changer de thème" class="p-2 text-gray-500 dark:text-gray-400">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+          </svg>
+        </button>
+        <button id="mobileMenuBtn" type="button" aria-label="Ouvrir le menu mobile" aria-expanded="false" class="p-2.5 rounded-xl text-brand-charcoal dark:text-white hover:bg-gray-100 dark:hover:bg-brand-carddark transition-colors">
+          <svg id="burgerIconOpen" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <svg id="burgerIconClose" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- TIROIR MENU MOBILE -->
+    <div id="mobileMenuDrawer" class="hidden lg:hidden border-b border-gray-100 dark:border-brand-borderdark bg-white dark:bg-brand-dark px-4 pt-3 pb-6 space-y-3 transition-all duration-300">
+      <a href="#fonctionnalites" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-medium text-brand-charcoal dark:text-gray-200 hover:bg-brand-lightred dark:hover:bg-brand-carddark hover:text-brand-red">Fonctionnalités</a>
+      <a href="#niveaux" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-medium text-brand-charcoal dark:text-gray-200 hover:bg-brand-lightred dark:hover:bg-brand-carddark hover:text-brand-red">Niveaux & Séries</a>
+      <a href="#profils" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-medium text-brand-charcoal dark:text-gray-200 hover:bg-brand-lightred dark:hover:bg-brand-carddark hover:text-brand-red">Directeurs, Enseignants & Parents</a>
+      <a href="#tarifs" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-medium text-brand-charcoal dark:text-gray-200 hover:bg-brand-lightred dark:hover:bg-brand-carddark hover:text-brand-red">Tarifs Écoles</a>
+      <a href="#temoignages" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-medium text-brand-charcoal dark:text-gray-200 hover:bg-brand-lightred dark:hover:bg-brand-carddark hover:text-brand-red">Témoignages</a>
+      <a href="#faq" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-medium text-brand-charcoal dark:text-gray-200 hover:bg-brand-lightred dark:hover:bg-brand-carddark hover:text-brand-red">Questions Fréquentes</a>
+      <div class="pt-2 flex flex-col gap-2">
+        <a href="#demo-form" class="mobile-nav-link w-full text-center px-4 py-3 rounded-xl text-white bg-brand-red font-semibold shadow-md">
+          Demander une démo école
+        </a>
+        <a href="https://wa.me/221766297742?text=Bonjour%2C%20je%20souhaite%20une%20d%C3%A9mo%20de%20AME%20BAC%20AK%20BFEM" target="_blank" rel="noopener noreferrer" class="w-full text-center px-4 py-2.5 rounded-xl border border-green-600 text-green-600 dark:text-green-400 font-semibold flex items-center justify-center gap-2">
+          <span>Écrire sur WhatsApp (+221 76 629 77 42)</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- ========================================================================= -->
+  <!-- 2. HERO SECTION                                                           -->
+  <!-- ========================================================================= -->
+  <section class="relative pt-32 pb-20 lg:pt-36 lg:pb-28 overflow-hidden bg-gradient-to-b from-brand-lightred/50 via-white to-white dark:from-brand-carddark/40 dark:via-brand-dark dark:to-brand-dark">
+    <!-- Cercles lumineux de fond -->
+    <div class="absolute top-10 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-brand-red/10 dark:bg-brand-red/5 blur-[120px] rounded-full pointer-events-none -z-10"></div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- En-tête & Titre -->
+      <div class="max-w-4xl mx-auto text-center space-y-6">
+        
+        <!-- Badges de confiance officiels -->
+        <div class="inline-flex flex-wrap items-center justify-center gap-2 px-4 py-1.5 rounded-full bg-white dark:bg-brand-carddark border border-brand-red/20 shadow-sm text-xs font-semibold">
+          <span class="flex h-2 w-2 relative">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-red opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-red"></span>
+          </span>
+          <span class="text-brand-red uppercase tracking-wider font-bold">100% Conforme MEN Sénégal</span>
+          <span class="text-gray-300 dark:text-gray-600">|</span>
+          <span class="text-brand-charcoal dark:text-gray-300">Collège (6e-3e) &amp; Lycée (Séries L &amp; S)</span>
+        </div>
+
+        <!-- SÉLECTEUR DE VARIANTES DE TITRES (Innovation Copywriting pour test instantané) -->
+        <div class="inline-flex items-center gap-1 p-1 bg-gray-100 dark:bg-brand-carddark rounded-xl text-xs font-medium text-brand-grey dark:text-gray-300 border border-gray-200 dark:border-brand-borderdark" role="group" aria-label="Variantes de titres">
+          <span class="px-2 py-1 text-[11px] uppercase tracking-wider font-bold text-brand-red hidden sm:inline">Variante A/B :</span>
+          <button type="button" class="headline-variant-btn px-2.5 py-1 rounded-lg transition-all bg-white dark:bg-brand-dark text-brand-red font-semibold shadow-xs" data-target="variant-1">1. Taux de Réussite</button>
+          <button type="button" class="headline-variant-btn px-2.5 py-1 rounded-lg transition-all hover:text-brand-charcoal dark:hover:text-white" data-target="variant-2">2. Prestige de l'École</button>
+          <button type="button" class="headline-variant-btn px-2.5 py-1 rounded-lg transition-all hover:text-brand-charcoal dark:hover:text-white" data-target="variant-3">3. Continuité Digitale</button>
+        </div>
+
+        <!-- 3 VARIANTES DU TITRE PRINCIPAL DU HERO -->
+        <div class="relative min-h-[140px] sm:min-h-[120px] flex items-center justify-center">
+          
+          <!-- VAR 1 (Par défaut) : Orientée Taux de Réussite & Wolof -->
+          <h1 id="hero-title-variant-1" class="hero-headline active-headline text-3xl sm:text-5xl lg:text-6xl font-heading font-extrabold tracking-tight text-brand-charcoal dark:text-white leading-[1.15]">
+            Offrez à votre école privée le secret d'un <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-red via-brand-red to-brand-darkred">100% de réussite</span> au BFEM et au Baccalauréat.
+          </h1>
+
+          <!-- VAR 2 : Orientée Élite & Décideurs d'Établissements -->
+          <h2 id="hero-title-variant-2" class="hero-headline hidden text-3xl sm:text-5xl lg:text-6xl font-heading font-extrabold tracking-tight text-brand-charcoal dark:text-white leading-[1.15]">
+            <span class="text-brand-red">AME BAC AK BFEM :</span> La plateforme d'élite qui propulse le prestige des collèges et lycées du Sénégal.
+          </h2>
+
+          <!-- VAR 3 : Orientée Continuité Pédagogique & Zéro Décrochage -->
+          <h2 id="hero-title-variant-3" class="hero-headline hidden text-3xl sm:text-5xl lg:text-6xl font-heading font-extrabold tracking-tight text-brand-charcoal dark:text-white leading-[1.15]">
+            Digitalisez votre établissement en 48h : le programme sénégalais de la 6e à la Tle, <span class="text-brand-red">même hors-ligne</span>.
+          </h2>
+        </div>
+
+        <!-- Sous-titre rassurant et axé sur les bénéfices -->
+        <p class="text-lg sm:text-xl text-brand-grey dark:text-gray-300 max-w-3xl mx-auto leading-relaxed text-balance">
+          En wolof, <strong class="text-brand-charcoal dark:text-white font-semibold">« AME »</strong> signifie <em class="italic text-brand-red font-medium">« Obtenir, Posséder »</em>. Nous donnons aux directeurs d'écoles privées, professeurs et élèves les cours vidéo, exercices corrigés et outils de suivi nécessaires pour décrocher les mentions les plus convoitées.
+        </p>
+
+        <!-- Boutons d'Action Principaux -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
+          <!-- CTA 1 : Démo École -->
+          <a href="#demo-form" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-base font-bold rounded-2xl text-white bg-brand-red hover:bg-brand-darkred shadow-lg shadow-brand-red/30 hover:shadow-xl hover:shadow-brand-red/45 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200">
+            <span>Demander une démo pour mon école</span>
+            <svg class="w-5 h-5 ml-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </a>
+
+          <!-- CTA 2 : Essai Gratuit Modal -->
+          <button type="button" id="openTrialModalBtn" class="w-full sm:w-auto inline-flex items-center justify-center px-7 py-4 text-base font-semibold rounded-2xl text-brand-charcoal dark:text-white bg-white dark:bg-brand-carddark border border-gray-200 dark:border-brand-borderdark hover:border-brand-red hover:text-brand-red dark:hover:border-brand-red shadow-sm hover:shadow transition-all duration-200">
+            <svg class="w-5 h-5 mr-2 text-brand-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span>Tester l'accès école (14 jours gratuits)</span>
+          </button>
+        </div>
+
+        <!-- Badges de réassurance sous les CTA -->
+        <div class="pt-3 flex flex-wrap items-center justify-center gap-6 text-xs text-brand-grey dark:text-gray-400">
+          <div class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-emerald-500" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+            </svg>
+            <span>Déploiement en 24h</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-emerald-500" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+            </svg>
+            <span>Formation complète des enseignants incluse</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-emerald-500" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+            </svg>
+            <span>Paiement Wave, Orange Money & Virement</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- MAQUETTE DE L'APPLICATION (Ordinateur + Mobile + Photo authentique d'élèves) -->
+      <!-- REMPLACER ICI : Vous pouvez remplacer les images par vos propres captures d'écran de l'interface ou photos de vos classes -->
+      <div class="mt-14 relative max-w-5xl mx-auto">
+        
+        <!-- Éléments visuels flottants : Cartes d'examens et statistiques -->
+        <div class="absolute -top-6 -left-4 sm:left-4 z-20 bg-white dark:bg-brand-carddark p-3.5 sm:p-4 rounded-2xl shadow-xl border border-gray-100 dark:border-brand-borderdark flex items-center gap-3 animate-float hidden md:flex">
+          <div class="w-10 h-10 rounded-xl bg-brand-lightred dark:bg-brand-red/20 text-brand-red flex items-center justify-center">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <div>
+            <div class="text-xs font-semibold text-brand-grey dark:text-gray-400">Bac S2 - Mathématiques</div>
+            <div class="text-sm font-bold text-brand-charcoal dark:text-white">98% de réussite aux annales</div>
+          </div>
+        </div>
+
+        <div class="absolute -bottom-6 -right-2 sm:right-6 z-20 bg-white dark:bg-brand-carddark p-3.5 sm:p-4 rounded-2xl shadow-xl border border-gray-100 dark:border-brand-borderdark flex items-center gap-3 hidden md:flex">
+          <div class="w-10 h-10 rounded-xl bg-emerald-50 dark:bg-emerald-950/40 text-emerald-600 flex items-center justify-center">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+            </svg>
+          </div>
+          <div>
+            <div class="text-xs font-semibold text-brand-grey dark:text-gray-400">Moyenne générale école</div>
+            <div class="text-sm font-bold text-emerald-600 dark:text-emerald-400">+3.4 pts ce semestre</div>
+          </div>
+        </div>
+
+        <!-- MAQUETTE ORDINATEUR (FRAMEWORK LAPTOP CSS) -->
+        <div class="relative bg-gray-900 rounded-3xl p-3 sm:p-5 shadow-2xl shadow-brand-charcoal/20 border-4 border-gray-800">
+          
+          <!-- Barre navigateur supérieure de la maquette -->
+          <div class="flex items-center justify-between pb-3 px-3 border-b border-gray-800 text-xs text-gray-400">
+            <div class="flex items-center gap-2">
+              <div class="w-3 h-3 rounded-full bg-red-500"></div>
+              <div class="w-3 h-3 rounded-full bg-amber-500"></div>
+              <div class="w-3 h-3 rounded-full bg-emerald-500"></div>
+            </div>
+            <div class="bg-gray-800/80 px-4 py-1 rounded-md text-[11px] text-gray-300 font-mono flex items-center gap-2">
+              <svg class="w-3 h-3 text-emerald-400" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd" />
+              </svg>
+              <span>https://ecole-demo.amebacakbfem.sn/dashboard</span>
+            </div>
+            <div class="text-[11px] font-semibold text-brand-red bg-brand-red/20 px-2 py-0.5 rounded">
+              DIRECTEUR V.4.2
+            </div>
+          </div>
+
+          <!-- Contenu interactif de l'application & Photo élèves -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 mt-3 bg-gray-950 rounded-2xl p-4 sm:p-6 overflow-hidden">
+            
+            <!-- Colonne 1 : Tableau de bord de l'école -->
+            <div class="lg:col-span-7 space-y-4">
+              <div class="flex items-center justify-between text-white">
+                <div>
+                  <h3 class="text-base sm:text-lg font-bold">Tableau de bord : Lycée d'Excellence Dakar</h3>
+                  <p class="text-xs text-gray-400">Suivi en direct : 480 élèves connectés • 16 classes actives</p>
+                </div>
+                <span class="px-2.5 py-1 bg-emerald-950 text-emerald-400 border border-emerald-800 rounded-lg text-xs font-semibold">
+                  Année 2025-2026
+                </span>
+              </div>
+
+              <!-- Cartes métriques rapides dans la maquette -->
+              <div class="grid grid-cols-3 gap-2.5">
+                <div class="bg-gray-900 border border-gray-800 p-2.5 sm:p-3 rounded-xl">
+                  <div class="text-[11px] text-gray-400">Taux Prépa BFEM</div>
+                  <div class="text-lg font-extrabold text-white mt-0.5">96.8%</div>
+                  <div class="text-[10px] text-emerald-400">↑ +14% vs N-1</div>
+                </div>
+                <div class="bg-gray-900 border border-gray-800 p-2.5 sm:p-3 rounded-xl">
+                  <div class="text-[11px] text-gray-400">Taux Prépa Bac</div>
+                  <div class="text-lg font-extrabold text-white mt-0.5">93.4%</div>
+                  <div class="text-[10px] text-emerald-400">S1, S2, L1, L2</div>
+                </div>
+                <div class="bg-gray-900 border border-gray-800 p-2.5 sm:p-3 rounded-xl">
+                  <div class="text-[11px] text-gray-400">Assiduité parents</div>
+                  <div class="text-lg font-extrabold text-white mt-0.5">89%</div>
+                  <div class="text-[10px] text-brand-red">WhatsApp actif</div>
+                </div>
+              </div>
+
+              <!-- Module de cours en direct dans la maquette -->
+              <div class="bg-gray-900/90 border border-gray-800 rounded-xl p-3 sm:p-4">
+                <div class="flex items-center justify-between text-xs text-gray-300 pb-2 border-b border-gray-800">
+                  <span class="flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-brand-red animate-pulse"></span>
+                    <strong class="text-white">Séance en direct en cours :</strong> Mathématiques Tle S2
+                  </span>
+                  <span class="text-brand-red font-semibold">M. Diouf (Agrégé)</span>
+                </div>
+                <div class="mt-2.5 flex items-center justify-between">
+                  <div class="text-xs text-gray-300">
+                    <p class="font-medium text-white">Thème : Étude complète des suites numériques & intégrales</p>
+                    <p class="text-[11px] text-gray-400 mt-0.5">38 élèves présents • 12 quiz auto-corrigés soumis</p>
+                  </div>
+                  <span class="px-3 py-1 bg-brand-red text-white text-xs font-semibold rounded-lg">
+                    Rejoindre
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Colonne 2 : Photo authentique des élèves en classe (Générée spécifiquement pour le Sénégal) -->
+            <div class="lg:col-span-5 relative rounded-xl overflow-hidden min-h-[220px] lg:min-h-[260px] border border-gray-800">
+              <img 
+                src="./assets/images/students-hero.jpg" 
+                alt="Élèves sénégalais révisant sur tablette avec la plateforme AME BAC AK BFEM" 
+                class="w-full h-full object-cover" 
+                loading="eager"
+              >
+              <div class="absolute inset-0 bg-gradient-to-t from-gray-950 via-transparent to-transparent"></div>
+              <div class="absolute bottom-3 left-3 right-3 text-white">
+                <span class="px-2 py-0.5 bg-brand-red text-[10px] font-bold uppercase rounded">Immersion Réelle</span>
+                <p class="text-xs font-medium text-gray-200 mt-1">Élèves d'un lycée partenaire à Dakar en séance de révision interactive.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- MAQUETTE SMARTPHONE MOBILE FLOTTANTE (Mobile First Preview) -->
+        <div class="absolute -bottom-10 -right-2 sm:-right-8 w-48 sm:w-60 bg-gray-900 border-4 border-gray-700 rounded-3xl p-2.5 shadow-2xl z-30 hidden sm:block">
+          <div class="w-16 h-3.5 bg-gray-800 rounded-full mx-auto mb-2"></div>
+          <div class="bg-gray-950 rounded-2xl p-3 text-white space-y-2">
+            <div class="flex items-center justify-between text-[10px]">
+              <span class="text-gray-400">9:41 AM</span>
+              <span class="text-emerald-400 font-bold">4G • 98%</span>
+            </div>
+            <div class="p-2 bg-brand-red rounded-xl text-center">
+              <div class="text-[10px] font-bold uppercase tracking-wider text-red-200">Mode Révision BFEM</div>
+              <div class="text-xs font-extrabold text-white mt-0.5">Quiz SVT 3ème : 19/20</div>
+            </div>
+            <div class="bg-gray-900 p-2 rounded-lg border border-gray-800 text-[10px]">
+              <p class="text-gray-400">Notification WhatsApp envoyée au parent :</p>
+              <p class="text-emerald-400 font-semibold mt-0.5">✓✓ "Mamadou a validé le chapitre 4"</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================================================= -->
+  <!-- 3. BANDE DE LOGOS : ÉCOLES PARTENAIRES                                    -->
+  <!-- ========================================================================= -->
+  <!-- REMPLACER ICI : Vous pouvez remplacer les noms ci-dessous par les logos réels de vos écoles partenaires au Sénégal -->
+  <section class="py-12 bg-white dark:bg-brand-dark border-y border-gray-100 dark:border-brand-borderdark overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-6 text-center">
+      <p class="text-xs font-bold uppercase tracking-widest text-brand-grey dark:text-gray-400">
+        Ils font confiance à <span class="text-brand-red font-extrabold">AME BAC AK BFEM</span> pour hisser leurs élèves vers les mentions
+      </p>
+    </div>
+
+    <!-- Carrousel continu de logos partenaires -->
+    <div class="relative w-full overflow-hidden flex items-center">
+      <div class="animate-marquee flex items-center gap-12 sm:gap-16 whitespace-nowrap">
+        
+        <!-- École 1 -->
+        <div class="flex items-center gap-3 opacity-75 hover:opacity-100 transition-opacity">
+          <div class="w-10 h-10 rounded-xl bg-brand-lightred dark:bg-brand-carddark text-brand-red flex items-center justify-center font-heading font-black text-sm">CSH</div>
+          <span class="text-sm font-bold text-brand-charcoal dark:text-gray-300">Groupe Scolaire Sainte-Marie de Hann</span>
+        </div>
+
+        <!-- École 2 -->
+        <div class="flex items-center gap-3 opacity-75 hover:opacity-100 transition-opacity">
+          <div class="w-10 h-10 rounded-xl bg-brand-lightred dark:bg-brand-carddark text-brand-red flex items-center justify-center font-heading font-black text-sm">CSC</div>
+          <span class="text-sm font-bold text-brand-charcoal dark:text-gray-300">Collège Sacré-Cœur Dakar</span>
+        </div>
+
+        <!-- École 3 -->
+        <div class="flex items-center gap-3 opacity-75 hover:opacity-100 transition-opacity">
+          <div class="w-10 h-10 rounded-xl bg-brand-lightred dark:bg-brand-carddark text-brand-red flex items-center justify-center font-heading font-black text-sm">LBD</div>
+          <span class="text-sm font-bold text-brand-charcoal dark:text-gray-300">Lycée d'Excellence Birago Diop</span>
+        </div>
+
+        <!-- École 4 -->
+        <div class="flex items-center gap-3 opacity-75 hover:opacity-100 transition-opacity">
+          <div class="w-10 h-10 rounded-xl bg-brand-lightred dark:bg-brand-carddark text-brand-red flex items-center justify-center font-heading font-black text-sm">IPA</div>
+          <span class="text-sm font-bold text-brand-charcoal dark:text-gray-300">Institut Privé Amadou Hampâté Bâ</span>
+        </div>
+
+        <!-- École 5 -->
+        <div class="flex items-center gap-3 opacity-75 hover:opacity-100 transition-opacity">
+          <div class="w-10 h-10 rounded-xl bg-brand-lightred dark:bg-brand-carddark text-brand-red flex items-center justify-center font-heading font-black text-sm">CAD</div>
+          <span class="text-sm font-bold text-brand-charcoal dark:text-gray-300">Complexe Éducatif Cheikh Anta Diop</span>
+        </div>
+
+        <!-- École 6 -->
+        <div class="flex items-center gap-3 opacity-75 hover:opacity-100 transition-opacity">
+          <div class="w-10 h-10 rounded-xl bg-brand-lightred dark:bg-brand-carddark text-brand-red flex items-center justify-center font-heading font-black text-sm">NDL</div>
+          <span class="text-sm font-bold text-brand-charcoal dark:text-gray-300">Institution Notre-Dame du Liban</span>
+        </div>
+
+        <!-- Duplicate pour boucle infinie sans saccade -->
+        <div class="flex items-center gap-3 opacity-75 hover:opacity-100 transition-opacity">
+          <div class="w-10 h-10 rounded-xl bg-brand-lightred dark:bg-brand-carddark text-brand-red flex items-center justify-center font-heading font-black text-sm">CSH</div>
+          <span class="text-sm font-bold text-brand-charcoal dark:text-gray-300">Groupe Scolaire Sainte-Marie de Hann</span>
+        </div>
+
+        <div class="flex items-center gap-3 opacity-75 hover:opacity-100 transition-opacity">
+          <div class="w-10 h-10 rounded-xl bg-brand-lightred dark:bg-brand-carddark text-brand-red flex items-center justify-center font-heading font-black text-sm">CSC</div>
+          <span class="text-sm font-bold text-brand-charcoal dark:text-gray-300">Collège Sacré-Cœur Dakar</span>
+        </div>
+
+        <div class="flex items-center gap-3 opacity-75 hover:opacity-100 transition-opacity">
+          <div class="w-10 h-10 rounded-xl bg-brand-lightred dark:bg-brand-carddark text-brand-red flex items-center justify-center font-heading font-black text-sm">LBD</div>
+          <span class="text-sm font-bold text-brand-charcoal dark:text-gray-300">Lycée d'Excellence Birago Diop</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================================================= -->
+  <!-- 4. SECTION PROBLÈME / SOLUTION                                            -->
+  <!-- ========================================================================= -->
+  <section class="py-20 lg:py-28 bg-gray-50/60 dark:bg-brand-dark" id="pourquoi-nous">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+        <span class="px-3.5 py-1 rounded-full bg-brand-lightred dark:bg-brand-red/10 text-brand-red text-xs font-extrabold uppercase tracking-wider">
+          Le Constat dans les Établissements Privés
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-brand-charcoal dark:text-white">
+          Les défis réels des écoles sénégalaises... et la réponse <span class="text-brand-red">AME BAC AK BFEM</span>
+        </h2>
+        <p class="text-base sm:text-lg text-brand-grey dark:text-gray-300">
+          Chaque année, les écoles privées perdent des élèves ou voient leurs taux d'admissibilité stagner à cause de blocages récurrents. Voici comment nous transformons ces obstacles en victoires.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- Défi 1 -->
+        <div class="bg-white dark:bg-brand-carddark p-8 rounded-3xl border border-gray-100 dark:border-brand-borderdark shadow-sm hover:shadow-subtle-red transition-all duration-300 group">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 rounded-2xl bg-red-100 dark:bg-red-950/50 text-brand-red flex items-center justify-center shrink-0">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+              </svg>
+            </div>
+            <div class="space-y-3">
+              <span class="text-xs font-bold text-red-600 dark:text-red-400 uppercase tracking-wider">Problème Fréquent</span>
+              <h3 class="text-xl font-bold text-brand-charcoal dark:text-white">Hétérogénéité des classes &amp; décrochage discret</h3>
+              <p class="text-sm text-brand-grey dark:text-gray-300 leading-relaxed">
+                Entre les élèves en difficulté et les plus rapides, les professeurs manquent de temps pour différencier leur pédagogie. Les élèves décrocheurs ne sont repérés qu'au 2ème trimestre, trop tard pour le BFEM ou le Bac.
+              </p>
+              <div class="pt-3 border-t border-gray-100 dark:border-brand-borderdark flex items-start gap-2.5 text-sm text-brand-charcoal dark:text-gray-200">
+                <svg class="w-5 h-5 text-brand-red shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                <span><strong>La solution AME :</strong> Tests de positionnement initiaux, remédiation ciblée par IA et parcours de soutien personnalisés accessibles 24/7.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Défi 2 -->
+        <div class="bg-white dark:bg-brand-carddark p-8 rounded-3xl border border-gray-100 dark:border-brand-borderdark shadow-sm hover:shadow-subtle-red transition-all duration-300 group">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 rounded-2xl bg-red-100 dark:bg-red-950/50 text-brand-red flex items-center justify-center shrink-0">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <div class="space-y-3">
+              <span class="text-xs font-bold text-red-600 dark:text-red-400 uppercase tracking-wider">Problème Fréquent</span>
+              <h3 class="text-xl font-bold text-brand-charcoal dark:text-white">Annales incomplètes et manuels scolaires onéreux</h3>
+              <p class="text-sm text-brand-grey dark:text-gray-300 leading-relaxed">
+                Les familles dépensent des dizaines de milliers de FCFA en polycopiés et annales souvent mal corrigées, sans explications détaillées étape par étape pour les séries scientifiques (S1, S2) et littéraires (L).
+              </p>
+              <div class="pt-3 border-t border-gray-100 dark:border-brand-borderdark flex items-start gap-2.5 text-sm text-brand-charcoal dark:text-gray-200">
+                <svg class="w-5 h-5 text-brand-red shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                <span><strong>La solution AME :</strong> Bibliothèque numérique complète des annales officielles 2012-2024 corrigées en vidéo par les meilleurs inspecteurs et professeurs du Sénégal.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Défi 3 -->
+        <div class="bg-white dark:bg-brand-carddark p-8 rounded-3xl border border-gray-100 dark:border-brand-borderdark shadow-sm hover:shadow-subtle-red transition-all duration-300 group">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 rounded-2xl bg-red-100 dark:bg-red-950/50 text-brand-red flex items-center justify-center shrink-0">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
+              </svg>
+            </div>
+            <div class="space-y-3">
+              <span class="text-xs font-bold text-red-600 dark:text-red-400 uppercase tracking-wider">Problème Fréquent</span>
+              <h3 class="text-xl font-bold text-brand-charcoal dark:text-white">Communication parents laborieuse et carnets perdus</h3>
+              <p class="text-sm text-brand-grey dark:text-gray-300 leading-relaxed">
+                Les groupes WhatsApp d'école deviennent vite chaotiques, les carnets de notes papier sont égarés ou masqués, et les parents se plaignent d'être informés trop tardivement des absences ou baisses de notes.
+              </p>
+              <div class="pt-3 border-t border-gray-100 dark:border-brand-borderdark flex items-start gap-2.5 text-sm text-brand-charcoal dark:text-gray-200">
+                <svg class="w-5 h-5 text-brand-red shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                <span><strong>La solution AME :</strong> Passerelle WhatsApp automatisée envoyant un récapitulatif chaque vendredi (devoirs faits, quiz réussis, temps d'étude, alertes notes).</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Défi 4 -->
+        <div class="bg-white dark:bg-brand-carddark p-8 rounded-3xl border border-gray-100 dark:border-brand-borderdark shadow-sm hover:shadow-subtle-red transition-all duration-300 group">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 rounded-2xl bg-red-100 dark:bg-red-950/50 text-brand-red flex items-center justify-center shrink-0">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636a9 9 0 010 12.728m0 0l-2.829-2.829m2.829 2.829L21 21M15.536 8.464a5 5 0 010 7.072m0 0l-2.829-2.829m-4.243 2.829a4.978 4.978 0 01-1.414-2.83m-1.414 5.658a9 9 0 01-2.167-9.238m7.824 2.167a1 1 0 111.414 1.414" />
+              </svg>
+            </div>
+            <div class="space-y-3">
+              <span class="text-xs font-bold text-red-600 dark:text-red-400 uppercase tracking-wider">Problème Fréquent</span>
+              <h3 class="text-xl font-bold text-brand-charcoal dark:text-white">Connexion internet instable &amp; coût excessif de la data</h3>
+              <p class="text-sm text-brand-grey dark:text-gray-300 leading-relaxed">
+                Les plateformes européennes consomment des gigas entiers de données et exigent une fibre optique constante. Dès qu'un élève rentre chez lui sans Wi-Fi, il ne peut plus étudier.
+              </p>
+              <div class="pt-3 border-t border-gray-100 dark:border-brand-borderdark flex items-start gap-2.5 text-sm text-brand-charcoal dark:text-gray-200">
+                <svg class="w-5 h-5 text-brand-red shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                <span><strong>La solution AME :</strong> Technologie Data-Saver (téléchargement hors-ligne des cours à l'école, formats vidéos ultra-compressés, synchronisation légère).</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================================================= -->
+  <!-- 5. FONCTIONNALITÉS CLÉS (9 CARTES AVEC ICÔNES ROUGES)                    -->
+  <!-- ========================================================================= -->
+  <section class="py-20 lg:py-28 bg-white dark:bg-brand-dark" id="fonctionnalites">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+        <span class="px-3.5 py-1 rounded-full bg-brand-lightred dark:bg-brand-red/10 text-brand-red text-xs font-extrabold uppercase tracking-wider">
+          Architecture Pédagogique Complète
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-brand-charcoal dark:text-white">
+          Toutes les fonctionnalités pensées pour <span class="text-brand-red">l'excellence</span> de votre école
+        </h2>
+        <p class="text-base sm:text-lg text-brand-grey dark:text-gray-300">
+          Une suite tout-en-un développée selon les exigences du Ministère de l'Éducation Nationale du Sénégal, pensée pour les directeurs d'écoles privées et leurs équipes.
+        </p>
+      </div>
+
+      <!-- Grille de 9 cartes -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Feature 1 -->
+        <div class="p-8 rounded-3xl bg-white dark:bg-brand-carddark border border-gray-100 dark:border-brand-borderdark hover:border-brand-red/40 hover:shadow-subtle-red transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-brand-lightred dark:bg-brand-red/20 text-brand-red flex items-center justify-center mb-6 group-hover:bg-brand-red group-hover:text-white transition-colors duration-200">
+              <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-heading font-bold text-brand-charcoal dark:text-white mb-3">Cours vidéo &amp; fiches PDF conformes</h3>
+            <p class="text-sm text-brand-grey dark:text-gray-300 leading-relaxed">
+              Des centaines d'heures de leçons captivantes structurées selon le programme sénégalais en vigueur. Fiches récapitulatives téléchargeables et imprimables en 1 clic.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-gray-100 dark:border-brand-borderdark text-xs font-semibold text-brand-red flex items-center gap-1">
+            <span>Conforme MEN Sénégal</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="p-8 rounded-3xl bg-white dark:bg-brand-carddark border border-gray-100 dark:border-brand-borderdark hover:border-brand-red/40 hover:shadow-subtle-red transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-brand-lightred dark:bg-brand-red/20 text-brand-red flex items-center justify-center mb-6 group-hover:bg-brand-red group-hover:text-white transition-colors duration-200">
+              <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-heading font-bold text-brand-charcoal dark:text-white mb-3">Exercices interactifs &amp; quiz auto-corrigés</h3>
+            <p class="text-sm text-brand-grey dark:text-gray-300 leading-relaxed">
+              Plus de 15 000 questions avec feedbacks immédiats et explications pas-à-pas. L'élève comprend ses erreurs en direct et le professeur n'a plus à passer ses nuits à corriger.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-gray-100 dark:border-brand-borderdark text-xs font-semibold text-brand-red flex items-center gap-1">
+            <span>Feedback pédagogique instantané</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="p-8 rounded-3xl bg-white dark:bg-brand-carddark border border-gray-100 dark:border-brand-borderdark hover:border-brand-red/40 hover:shadow-subtle-red transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-brand-lightred dark:bg-brand-red/20 text-brand-red flex items-center justify-center mb-6 group-hover:bg-brand-red group-hover:text-white transition-colors duration-200">
+              <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-heading font-bold text-brand-charcoal dark:text-white mb-3">Prépa BFEM &amp; Bac (Annales corrigées)</h3>
+            <p class="text-sm text-brand-grey dark:text-gray-300 leading-relaxed">
+              Toutes les épreuves des 12 dernières années (BFEM, Bac S1, S2, L1, L2, G) avec barèmes officiels et corrigés vidéo pour assimiler la méthode parfaite d'examen.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-gray-100 dark:border-brand-borderdark text-xs font-semibold text-brand-red flex items-center gap-1">
+            <span>Sessions d'examens blancs</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </div>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="p-8 rounded-3xl bg-white dark:bg-brand-carddark border border-gray-100 dark:border-brand-borderdark hover:border-brand-red/40 hover:shadow-subtle-red transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-brand-lightred dark:bg-brand-red/20 text-brand-red flex items-center justify-center mb-6 group-hover:bg-brand-red group-hover:text-white transition-colors duration-200">
+              <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-heading font-bold text-brand-charcoal dark:text-white mb-3">Classes virtuelles &amp; rediffusions</h3>
+            <p class="text-sm text-brand-grey dark:text-gray-300 leading-relaxed">
+              Organisez des cours en direct sécurisés pour vos classes. Même en cas d'absence d'un élève ou lors des jours fériés, chaque séance est enregistrée et réécoutable.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-gray-100 dark:border-brand-borderdark text-xs font-semibold text-brand-red flex items-center gap-1">
+            <span>Zéro rupture pédagogique</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </div>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="p-8 rounded-3xl bg-white dark:bg-brand-carddark border border-gray-100 dark:border-brand-borderdark hover:border-brand-red/40 hover:shadow-subtle-red transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-brand-lightred dark:bg-brand-red/20 text-brand-red flex items-center justify-center mb-6 group-hover:bg-brand-red group-hover:text-white transition-colors duration-200">
+              <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-heading font-bold text-brand-charcoal dark:text-white mb-3">Suivi des notes &amp; de la progression</h3>
+            <p class="text-sm text-brand-grey dark:text-gray-300 leading-relaxed">
+              Analyses détaillées par matière, par classe et par compétence. Identifiez en un clin d'œil les lacunes d'un élève avant le conseil de classe pour agir à temps.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-gray-100 dark:border-brand-borderdark text-xs font-semibold text-brand-red flex items-center gap-1">
+            <span>Rapports exportables PDF / Excel</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </div>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="p-8 rounded-3xl bg-white dark:bg-brand-carddark border border-gray-100 dark:border-brand-borderdark hover:border-brand-red/40 hover:shadow-subtle-red transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-brand-lightred dark:bg-brand-red/20 text-brand-red flex items-center justify-center mb-6 group-hover:bg-brand-red group-hover:text-white transition-colors duration-200">
+              <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-heading font-bold text-brand-charcoal dark:text-white mb-3">Espace parents avec alertes WhatsApp</h3>
+            <p class="text-sm text-brand-grey dark:text-gray-300 leading-relaxed">
+              Rassurez les familles et gagnez leur fidélité. Les parents reçoivent des alertes directement sur WhatsApp : assiduité, notes des devoirs et conseils d'encouragement.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-gray-100 dark:border-brand-borderdark text-xs font-semibold text-brand-red flex items-center gap-1">
+            <span>Canal WhatsApp automatisé</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </div>
+        </div>
+
+        <!-- Feature 7 -->
+        <div class="p-8 rounded-3xl bg-white dark:bg-brand-carddark border border-gray-100 dark:border-brand-borderdark hover:border-brand-red/40 hover:shadow-subtle-red transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-brand-lightred dark:bg-brand-red/20 text-brand-red flex items-center justify-center mb-6 group-hover:bg-brand-red group-hover:text-white transition-colors duration-200">
+              <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-heading font-bold text-brand-charcoal dark:text-white mb-3">Tableau de bord pour la direction</h3>
+            <p class="text-sm text-brand-grey dark:text-gray-300 leading-relaxed">
+              Pilotez l'ensemble de votre établissement en temps réel : assiduité des enseignants, taux d'avancement des programmes scolaires et projection des résultats au Bac/BFEM.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-gray-100 dark:border-brand-borderdark text-xs font-semibold text-brand-red flex items-center gap-1">
+            <span>Vision d'ensemble pour le promoteur</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </div>
+        </div>
+
+        <!-- Feature 8 -->
+        <div class="p-8 rounded-3xl bg-white dark:bg-brand-carddark border border-gray-100 dark:border-brand-borderdark hover:border-brand-red/40 hover:shadow-subtle-red transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-brand-lightred dark:bg-brand-red/20 text-brand-red flex items-center justify-center mb-6 group-hover:bg-brand-red group-hover:text-white transition-colors duration-200">
+              <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-heading font-bold text-brand-charcoal dark:text-white mb-3">Mode hors-ligne / Data-Saver</h3>
+            <p class="text-sm text-brand-grey dark:text-gray-300 leading-relaxed">
+              Conçu spécifiquement pour le contexte de connectivité sénégalais. Les cours se téléchargent à l'école et restent consultables sans consommer de crédit internet chez soi.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-gray-100 dark:border-brand-borderdark text-xs font-semibold text-brand-red flex items-center gap-1">
+            <span>Économie de forfait internet</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </div>
+        </div>
+
+        <!-- Feature 9 -->
+        <div class="p-8 rounded-3xl bg-white dark:bg-brand-carddark border border-gray-100 dark:border-brand-borderdark hover:border-brand-red/40 hover:shadow-subtle-red transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-brand-lightred dark:bg-brand-red/20 text-brand-red flex items-center justify-center mb-6 group-hover:bg-brand-red group-hover:text-white transition-colors duration-200">
+              <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-heading font-bold text-brand-charcoal dark:text-white mb-3">Paiement Wave, Orange Money &amp; CB</h3>
+            <p class="text-sm text-brand-grey dark:text-gray-300 leading-relaxed">
+              Zéro friction financière. Les abonnements élèves ou packs établissements se règlent en toute sécurité par Wave, Orange Money, virement bancaire ou carte Visa/Mastercard.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-gray-100 dark:border-brand-borderdark text-xs font-semibold text-brand-red flex items-center gap-1">
+            <span>Validation comptable instantanée</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================================================= -->
+  <!-- 6. NIVEAUX COUVERTS (ONGLETS INTERACTIFS COLLÈGE / LYCÉE)                  -->
+  <!-- ========================================================================= -->
+  <section class="py-20 lg:py-28 bg-gray-50/70 dark:bg-brand-dark/50 border-t border-gray-100 dark:border-brand-borderdark" id="niveaux">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-12 space-y-4">
+        <span class="px-3.5 py-1 rounded-full bg-brand-lightred dark:bg-brand-red/10 text-brand-red text-xs font-extrabold uppercase tracking-wider">
+          Programme Scolaire Sénégalais
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-brand-charcoal dark:text-white">
+          De la 6ème à la Terminale : tous les niveaux et séries couverts
+        </h2>
+        <p class="text-base sm:text-lg text-brand-grey dark:text-gray-300">
+          Chaque matière est découpée par trimestre selon les instructions pédagogiques officielles du Sénégal.
+        </p>
+      </div>
+
+      <!-- Sélecteur d'onglets Collège / Lycée -->
+      <div class="flex justify-center mb-10">
+        <div class="inline-flex p-1.5 bg-white dark:bg-brand-carddark rounded-2xl shadow-sm border border-gray-200 dark:border-brand-borderdark" role="tablist">
+          <button type="button" id="tabCollegeBtn" role="tab" aria-selected="true" class="level-tab-btn active-tab px-6 sm:px-10 py-3 rounded-xl font-heading font-bold text-sm sm:text-base transition-all duration-200 bg-brand-red text-white shadow-md">
+            🏫 Collège (6ème à 3ème) • Objectif BFEM
+          </button>
+          <button type="button" id="tabLyceeBtn" role="tab" aria-selected="false" class="level-tab-btn px-6 sm:px-10 py-3 rounded-xl font-heading font-bold text-sm sm:text-base transition-all duration-200 text-brand-grey dark:text-gray-300 hover:text-brand-charcoal dark:hover:text-white">
+            🎓 Lycée (2nde à Terminale) • Objectif BAC
+          </button>
+        </div>
+      </div>
+
+      <!-- CONTENU ONGLET 1 : COLLÈGE -->
+      <div id="tabContentCollege" class="block transition-all duration-300">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          
+          <div class="lg:col-span-1 bg-white dark:bg-brand-carddark p-8 rounded-3xl border border-gray-100 dark:border-brand-borderdark shadow-sm">
+            <span class="px-3 py-1 bg-brand-lightred text-brand-red font-bold text-xs rounded-lg uppercase">Cycle Moyen</span>
+            <h3 class="text-2xl font-bold font-heading text-brand-charcoal dark:text-white mt-4 mb-2">Les 4 classes du Collège</h3>
+            <p class="text-sm text-brand-grey dark:text-gray-300 mb-6">
+              Une transition réussie entre le primaire et les exigences du Brevet de Fin d'Études Moyennes (BFEM).
+            </p>
+            
+            <div class="space-y-3">
+              <div class="p-3.5 rounded-xl bg-gray-50 dark:bg-brand-dark/80 flex items-center justify-between">
+                <span class="font-bold text-brand-charcoal dark:text-white">Classe de 6ème</span>
+                <span class="text-xs text-brand-grey dark:text-gray-400">Consolidation bases</span>
+              </div>
+              <div class="p-3.5 rounded-xl bg-gray-50 dark:bg-brand-dark/80 flex items-center justify-between">
+                <span class="font-bold text-brand-charcoal dark:text-white">Classe de 5ème</span>
+                <span class="text-xs text-brand-grey dark:text-gray-400">Raisonnement &amp; rédaction</span>
+              </div>
+              <div class="p-3.5 rounded-xl bg-gray-50 dark:bg-brand-dark/80 flex items-center justify-between">
+                <span class="font-bold text-brand-charcoal dark:text-white">Classe de 4ème</span>
+                <span class="text-xs text-brand-grey dark:text-gray-400">Introduction Sc. Physiques</span>
+              </div>
+              <div class="p-3.5 rounded-xl bg-brand-lightred/70 dark:bg-brand-red/20 border border-brand-red/30 flex items-center justify-between">
+                <div>
+                  <span class="font-bold text-brand-red">Classe de 3ème</span>
+                  <span class="block text-[11px] text-brand-darkred dark:text-red-300 font-semibold">Examen National BFEM</span>
+                </div>
+                <span class="px-2.5 py-1 bg-brand-red text-white text-xs font-bold rounded-lg">Priorité</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Matières & Spécificités BFEM -->
+          <div class="lg:col-span-2 bg-white dark:bg-brand-carddark p-8 rounded-3xl border border-gray-100 dark:border-brand-borderdark shadow-sm">
+            <h4 class="text-xl font-heading font-bold text-brand-charcoal dark:text-white mb-6">Matières enseignées &amp; Modules BFEM Spécialisés</h4>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+              <div class="flex items-center gap-3 p-3 rounded-xl border border-gray-100 dark:border-brand-borderdark">
+                <div class="w-8 h-8 rounded-lg bg-red-100 dark:bg-red-950 text-brand-red flex items-center justify-center font-bold text-xs">📐</div>
+                <div>
+                  <div class="font-bold text-sm text-brand-charcoal dark:text-white">Mathématiques</div>
+                  <div class="text-xs text-brand-grey dark:text-gray-400">Algèbre, Géométrie, Théorèmes</div>
+                </div>
+              </div>
+              <div class="flex items-center gap-3 p-3 rounded-xl border border-gray-100 dark:border-brand-borderdark">
+                <div class="w-8 h-8 rounded-lg bg-red-100 dark:bg-red-950 text-brand-red flex items-center justify-center font-bold text-xs">✍️</div>
+                <div>
+                  <div class="font-bold text-sm text-brand-charcoal dark:text-white">Français &amp; Dictée</div>
+                  <div class="text-xs text-brand-grey dark:text-gray-400">Grammaire, Dictée préparée, Texte suivi</div>
+                </div>
+              </div>
+              <div class="flex items-center gap-3 p-3 rounded-xl border border-gray-100 dark:border-brand-borderdark">
+                <div class="w-8 h-8 rounded-lg bg-red-100 dark:bg-red-950 text-brand-red flex items-center justify-center font-bold text-xs">🔬</div>
+                <div>
+                  <div class="font-bold text-sm text-brand-charcoal dark:text-white">Sciences de la Vie et de la Terre (SVT)</div>
+                  <div class="text-xs text-brand-grey dark:text-gray-400">Génétique, Reproduction, Écosystèmes</div>
+                </div>
+              </div>
+              <div class="flex items-center gap-3 p-3 rounded-xl border border-gray-100 dark:border-brand-borderdark">
+                <div class="w-8 h-8 rounded-lg bg-red-100 dark:bg-red-950 text-brand-red flex items-center justify-center font-bold text-xs">⚡</div>
+                <div>
+                  <div class="font-bold text-sm text-brand-charcoal dark:text-white">Sciences Physiques (4e - 3e)</div>
+                  <div class="text-xs text-brand-grey dark:text-gray-400">Électricité, Optique, Chimie de base</div>
+                </div>
+              </div>
+              <div class="flex items-center gap-3 p-3 rounded-xl border border-gray-100 dark:border-brand-borderdark">
+                <div class="w-8 h-8 rounded-lg bg-red-100 dark:bg-red-950 text-brand-red flex items-center justify-center font-bold text-xs">🌍</div>
+                <div>
+                  <div class="font-bold text-sm text-brand-charcoal dark:text-white">Histoire &amp; Géographie</div>
+                  <div class="text-xs text-brand-grey dark:text-gray-400">Afrique précoloniale, Sénégal contemporain</div>
+                </div>
+              </div>
+              <div class="flex items-center gap-3 p-3 rounded-xl border border-gray-100 dark:border-brand-borderdark">
+                <div class="w-8 h-8 rounded-lg bg-red-100 dark:bg-red-950 text-brand-red flex items-center justify-center font-bold text-xs">🇬🇧</div>
+                <div>
+                  <div class="font-bold text-sm text-brand-charcoal dark:text-white">Anglais</div>
+                  <div class="text-xs text-brand-grey dark:text-gray-400">Vocabulaire, Compréhension, Épreuve BFEM</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Focus BFEM -->
+            <div class="p-4 rounded-2xl bg-brand-lightred/50 dark:bg-brand-red/10 border border-brand-red/20 flex flex-col sm:flex-row items-center justify-between gap-4">
+              <div>
+                <h5 class="text-sm font-bold text-brand-darkred dark:text-red-300">Pack Spécial « BFEM Blanc National »</h5>
+                <p class="text-xs text-brand-grey dark:text-gray-300 mt-0.5">3 sessions complètes corrigées avec les barèmes des académies de Dakar, Thiès et Saint-Louis.</p>
+              </div>
+              <a href="#demo-form" class="px-4 py-2 bg-brand-red text-white text-xs font-bold rounded-xl whitespace-nowrap hover:bg-brand-darkred">
+                Tester les annales BFEM
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <!-- CONTENU ONGLET 2 : LYCÉE (Caché au départ) -->
+      <div id="tabContentLycee" class="hidden transition-all duration-300">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          
+          <div class="lg:col-span-1 bg-white dark:bg-brand-carddark p-8 rounded-3xl border border-gray-100 dark:border-brand-borderdark shadow-sm">
+            <span class="px-3 py-1 bg-brand-lightred text-brand-red font-bold text-xs rounded-lg uppercase">Cycle Secondaire</span>
+            <h3 class="text-2xl font-bold font-heading text-brand-charcoal dark:text-white mt-4 mb-2">Seconde, Première &amp; Terminale</h3>
+            <p class="text-sm text-brand-grey dark:text-gray-300 mb-6">
+              Une spécialisation pointue pour décrocher le Baccalauréat avec mention et préparer les bourses d'excellence.
+            </p>
+            
+            <div class="space-y-3">
+              <div class="p-3.5 rounded-xl bg-gray-50 dark:bg-brand-dark/80 flex items-center justify-between">
+                <div>
+                  <span class="font-bold text-brand-charcoal dark:text-white">Seconde (S &amp; L)</span>
+                  <span class="block text-[11px] text-brand-grey dark:text-gray-400">Orientation stratégique</span>
+                </div>
+                <span class="text-xs font-semibold text-gray-500">Tronc commun</span>
+              </div>
+              <div class="p-3.5 rounded-xl bg-gray-50 dark:bg-brand-dark/80 flex items-center justify-between">
+                <div>
+                  <span class="font-bold text-brand-charcoal dark:text-white">Première (S1, S2, L1, L2, G)</span>
+                  <span class="block text-[11px] text-brand-grey dark:text-gray-400">Approfondissement des filières</span>
+                </div>
+                <span class="text-xs font-semibold text-gray-500">Anticipé</span>
+              </div>
+              <div class="p-3.5 rounded-xl bg-brand-lightred/70 dark:bg-brand-red/20 border border-brand-red/30 flex items-center justify-between">
+                <div>
+                  <span class="font-bold text-brand-red">Terminale (Toutes séries)</span>
+                  <span class="block text-[11px] text-brand-darkred dark:text-red-300 font-semibold">Examen du BACCALAURÉAT</span>
+                </div>
+                <span class="px-2.5 py-1 bg-brand-red text-white text-xs font-bold rounded-lg">Mention</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Séries & Matières du Lycée -->
+          <div class="lg:col-span-2 bg-white dark:bg-brand-carddark p-8 rounded-3xl border border-gray-100 dark:border-brand-borderdark shadow-sm">
+            <h4 class="text-xl font-heading font-bold text-brand-charcoal dark:text-white mb-6">Spécificités par Séries du Bac Sénégalais</h4>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+              
+              <!-- Série S -->
+              <div class="p-4 rounded-2xl border border-gray-200 dark:border-brand-borderdark bg-gradient-to-br from-white to-gray-50 dark:from-brand-carddark dark:to-brand-dark">
+                <div class="flex items-center justify-between mb-2">
+                  <span class="font-heading font-bold text-brand-charcoal dark:text-white">Séries Scientifiques (S1 - S2)</span>
+                  <span class="text-xs px-2 py-0.5 rounded bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 font-bold">Sciences</span>
+                </div>
+                <ul class="text-xs text-brand-grey dark:text-gray-300 space-y-1.5 list-disc list-inside">
+                  <li><strong>Mathématiques S :</strong> Analyse, probabilités, espaces vectoriels</li>
+                  <li><strong>Sciences Physiques :</strong> Mécanique de Newton, chimie orga</li>
+                  <li><strong>SVT :</strong> Génétique humaine, immunologie, géologie</li>
+                </ul>
+              </div>
+
+              <!-- Série L -->
+              <div class="p-4 rounded-2xl border border-gray-200 dark:border-brand-borderdark bg-gradient-to-br from-white to-gray-50 dark:from-brand-carddark dark:to-brand-dark">
+                <div class="flex items-center justify-between mb-2">
+                  <span class="font-heading font-bold text-brand-charcoal dark:text-white">Séries Littéraires (L1 - L2)</span>
+                  <span class="text-xs px-2 py-0.5 rounded bg-amber-100 dark:bg-amber-900/40 text-amber-700 dark:text-amber-300 font-bold">Lettres</span>
+                </div>
+                <ul class="text-xs text-brand-grey dark:text-gray-300 space-y-1.5 list-disc list-inside">
+                  <li><strong>Philosophie :</strong> Méthodologie dissertation et commentaire</li>
+                  <li><strong>Français :</strong> Littérature négro-africaine &amp; universelle</li>
+                  <li><strong>Histoire-Géo &amp; Langues :</strong> Anglais, Espagnol, Arabe</li>
+                </ul>
+              </div>
+
+              <!-- Série Technique / G -->
+              <div class="p-4 rounded-2xl border border-gray-200 dark:border-brand-borderdark bg-gradient-to-br from-white to-gray-50 dark:from-brand-carddark dark:to-brand-dark">
+                <div class="flex items-center justify-between mb-2">
+                  <span class="font-heading font-bold text-brand-charcoal dark:text-white">Série G &amp; Tertiaire</span>
+                  <span class="text-xs px-2 py-0.5 rounded bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300 font-bold">Gestion</span>
+                </div>
+                <ul class="text-xs text-brand-grey dark:text-gray-300 space-y-1.5 list-disc list-inside">
+                  <li>Comptabilité générale et financière</li>
+                  <li>Économie d'entreprise et droit sénégalais</li>
+                  <li>Mathématiques financières</li>
+                </ul>
+              </div>
+
+              <!-- Annales Bac 2012-2024 -->
+              <div class="p-4 rounded-2xl border border-gray-200 dark:border-brand-borderdark bg-gradient-to-br from-white to-gray-50 dark:from-brand-carddark dark:to-brand-dark">
+                <div class="flex items-center justify-between mb-2">
+                  <span class="font-heading font-bold text-brand-charcoal dark:text-white">Annales Officielles Bac</span>
+                  <span class="text-xs px-2 py-0.5 rounded bg-brand-lightred dark:bg-brand-red/30 text-brand-red font-bold">2012-2024</span>
+                </div>
+                <ul class="text-xs text-brand-grey dark:text-gray-300 space-y-1.5 list-disc list-inside">
+                  <li>Sujets du 1er groupe et 2nd groupe d'épreuves</li>
+                  <li>Correction pas-à-pas avec grilles de notation</li>
+                  <li>Astuces pour gagner 2 à 4 points décisifs</li>
+                </ul>
+              </div>
+
+            </div>
+
+            <!-- Focus Bac -->
+            <div class="p-4 rounded-2xl bg-brand-lightred/50 dark:bg-brand-red/10 border border-brand-red/20 flex flex-col sm:flex-row items-center justify-between gap-4">
+              <div>
+                <h5 class="text-sm font-bold text-brand-darkred dark:text-red-300">Objectif Mention &amp; Concours Post-Bac</h5>
+                <p class="text-xs text-brand-grey dark:text-gray-300 mt-0.5">Préparation intégrée aux concours (ESP, EPT Thiès, FMPOS, Classes Prépa Sénégal).</p>
+              </div>
+              <a href="#demo-form" class="px-4 py-2 bg-brand-red text-white text-xs font-bold rounded-xl whitespace-nowrap hover:bg-brand-darkred">
+                Découvrir l'Espace Lycée
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================================================= -->
+  <!-- 7. COMMENT ÇA MARCHE (4 ÉTAPES VISUELLES CLÉS EN MAIN)                     -->
+  <!-- ========================================================================= -->
+  <section class="py-20 lg:py-28 bg-white dark:bg-brand-dark" id="comment-ca-marche">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+        <span class="px-3.5 py-1 rounded-full bg-brand-lightred dark:bg-brand-red/10 text-brand-red text-xs font-extrabold uppercase tracking-wider">
+          Déploiement Clé en Main
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-brand-charcoal dark:text-white">
+          Comment intégrer <span class="text-brand-red">AME BAC AK BFEM</span> dans votre école en 4 étapes simples
+        </h2>
+        <p class="text-base sm:text-lg text-brand-grey dark:text-gray-300">
+          Aucune compétence informatique requise pour la direction. Notre équipe technique s'occupe de toute la configuration initiale.
+        </p>
+      </div>
+
+      <!-- Grille des 4 étapes avec ligne de connexion -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative">
+        
+        <!-- Étape 1 -->
+        <div class="relative bg-gray-50 dark:bg-brand-carddark p-7 rounded-3xl border border-gray-100 dark:border-brand-borderdark hover:-translate-y-1 transition-all duration-300">
+          <div class="w-12 h-12 rounded-2xl bg-brand-red text-white flex items-center justify-center font-heading font-extrabold text-xl shadow-md shadow-brand-red/30 mb-6">
+            1
+          </div>
+          <h3 class="text-xl font-bold font-heading text-brand-charcoal dark:text-white mb-2">L'école s'inscrit</h3>
+          <p class="text-sm text-brand-grey dark:text-gray-300 leading-relaxed">
+            Le promoteur ou directeur prend contact (démo ou appel WhatsApp). Nous définissons ensemble les classes à ouvrir (6e à Tle) et le volume d'élèves.
+          </p>
+          <div class="mt-4 text-xs font-semibold text-brand-red">
+            Durée : 10 minutes
+          </div>
+        </div>
+
+        <!-- Étape 2 -->
+        <div class="relative bg-gray-50 dark:bg-brand-carddark p-7 rounded-3xl border border-gray-100 dark:border-brand-borderdark hover:-translate-y-1 transition-all duration-300">
+          <div class="w-12 h-12 rounded-2xl bg-brand-charcoal dark:bg-white text-white dark:text-brand-charcoal flex items-center justify-center font-heading font-extrabold text-xl shadow-md mb-6">
+            2
+          </div>
+          <h3 class="text-xl font-bold font-heading text-brand-charcoal dark:text-white mb-2">Configuration clé en main</h3>
+          <p class="text-sm text-brand-grey dark:text-gray-300 leading-relaxed">
+            Vous nous transmettez la liste de vos élèves et enseignants. Notre équipe paramètre vos classes et forme vos professeurs (en visio ou en présentiel à Dakar).
+          </p>
+          <div class="mt-4 text-xs font-semibold text-brand-grey dark:text-gray-400">
+            Délai garanti : 24 à 48 heures
+          </div>
+        </div>
+
+        <!-- Étape 3 -->
+        <div class="relative bg-gray-50 dark:bg-brand-carddark p-7 rounded-3xl border border-gray-100 dark:border-brand-borderdark hover:-translate-y-1 transition-all duration-300">
+          <div class="w-12 h-12 rounded-2xl bg-brand-red text-white flex items-center justify-center font-heading font-extrabold text-xl shadow-md shadow-brand-red/30 mb-6">
+            3
+          </div>
+          <h3 class="text-xl font-bold font-heading text-brand-charcoal dark:text-white mb-2">Connexion immédiate</h3>
+          <p class="text-sm text-brand-grey dark:text-gray-300 leading-relaxed">
+            Chaque élève, parent et enseignant reçoit ses identifiants uniques par SMS ou WhatsApp. Les cours, quiz et annales sont accessibles immédiatement.
+          </p>
+          <div class="mt-4 text-xs font-semibold text-brand-red">
+            Compatible Smartphone &amp; Ordinateur
+          </div>
+        </div>
+
+        <!-- Étape 4 -->
+        <div class="relative bg-gray-50 dark:bg-brand-carddark p-7 rounded-3xl border border-gray-100 dark:border-brand-borderdark hover:-translate-y-1 transition-all duration-300">
+          <div class="w-12 h-12 rounded-2xl bg-emerald-600 text-white flex items-center justify-center font-heading font-extrabold text-xl shadow-md mb-6">
+            4
+          </div>
+          <h3 class="text-xl font-bold font-heading text-brand-charcoal dark:text-white mb-2">Pilotage &amp; Réussite</h3>
+          <p class="text-sm text-brand-grey dark:text-gray-300 leading-relaxed">
+            La direction pilote les progrès sur son tableau de bord. Aux examens de fin d'année, votre école affiche des taux de réussite records au BFEM et au Bac !
+          </p>
+          <div class="mt-4 text-xs font-semibold text-emerald-600 dark:text-emerald-400">
+            Objectif : 100% de mentions
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bannière d'accompagnement -->
+      <div class="mt-12 bg-gradient-to-r from-brand-red/10 via-transparent to-brand-red/10 dark:from-brand-carddark dark:to-brand-carddark p-6 rounded-2xl border border-brand-red/20 text-center flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="flex items-center gap-3 text-left">
+          <div class="w-10 h-10 rounded-full bg-brand-red text-white flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+          </div>
+          <div>
+            <h4 class="font-bold text-sm text-brand-charcoal dark:text-white">Un conseiller pédagogique dédié vous est attribué</h4>
+            <p class="text-xs text-brand-grey dark:text-gray-400">Assistance 6j/7 par téléphone et WhatsApp pour répondre à vos directeurs et professeurs.</p>
+          </div>
+        </div>
+        <a href="https://wa.me/221766297742?text=Bonjour%2C%20je%20souhaite%20en%20savoir%20plus%20sur%20le%20d%C3%A9ploiement%20de%20AME%20BAC%20AK%20BFEM" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-xl bg-white dark:bg-brand-dark border border-gray-200 dark:border-brand-borderdark text-xs font-bold text-brand-charcoal dark:text-white hover:text-brand-red whitespace-nowrap shadow-sm">
+          Parler à un conseiller (+221 76 629 77 42)
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================================================= -->
+  <!-- 8. UNE SECTION PAR PROFIL (ONGLETS DIRECTEUR / PROF / PARENT / ÉLÈVE)     -->
+  <!-- ========================================================================= -->
+  <section class="py-20 lg:py-28 bg-gray-50/70 dark:bg-brand-dark/40" id="profils">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-12 space-y-4">
+        <span class="px-3.5 py-1 rounded-full bg-brand-lightred dark:bg-brand-red/10 text-brand-red text-xs font-extrabold uppercase tracking-wider">
+          Une Valeur Ajoutée pour Chaque Acteur
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-brand-charcoal dark:text-white">
+          Chaque membre de votre communauté scolaire y gagne
+        </h2>
+        <p class="text-base sm:text-lg text-brand-grey dark:text-gray-300">
+          Sélectionnez un profil pour découvrir les bénéfices concrets au quotidien.
+        </p>
+      </div>
+
+      <!-- Onglets des 4 profils -->
+      <div class="flex justify-center mb-10 overflow-x-auto pb-2">
+        <div class="inline-flex p-1 bg-white dark:bg-brand-carddark rounded-2xl shadow-sm border border-gray-200 dark:border-brand-borderdark" role="tablist">
+          <button type="button" class="profile-tab-btn active-profile px-4 sm:px-6 py-2.5 rounded-xl font-heading font-bold text-xs sm:text-sm transition-all duration-200 bg-brand-red text-white shadow-sm" data-profile="directeur">
+            👔 Directeur &amp; Promoteur
+          </button>
+          <button type="button" class="profile-tab-btn px-4 sm:px-6 py-2.5 rounded-xl font-heading font-bold text-xs sm:text-sm transition-all duration-200 text-brand-grey dark:text-gray-300 hover:text-brand-charcoal dark:hover:text-white" data-profile="enseignant">
+            🧑‍🏫 Enseignant
+          </button>
+          <button type="button" class="profile-tab-btn px-4 sm:px-6 py-2.5 rounded-xl font-heading font-bold text-xs sm:text-sm transition-all duration-200 text-brand-grey dark:text-gray-300 hover:text-brand-charcoal dark:hover:text-white" data-profile="parent">
+            👨‍👩‍👧 Parent d'Élève
+          </button>
+          <button type="button" class="profile-tab-btn px-4 sm:px-6 py-2.5 rounded-xl font-heading font-bold text-xs sm:text-sm transition-all duration-200 text-brand-grey dark:text-gray-300 hover:text-brand-charcoal dark:hover:text-white" data-profile="eleve">
+            🎒 Élève
+          </button>
+        </div>
+      </div>
+
+      <!-- CARTE PROFIL DYNAMIQUE -->
+      <div class="bg-white dark:bg-brand-carddark rounded-3xl border border-gray-100 dark:border-brand-borderdark p-6 sm:p-10 shadow-sm max-w-5xl mx-auto transition-all duration-300">
+        
+        <!-- PROFIL 1 : DIRECTEUR & PROMOTEUR (Affiché par défaut) -->
+        <div id="profile-directeur" class="profile-panel block">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <div class="lg:col-span-7 space-y-5">
+              <span class="px-3 py-1 bg-brand-lightred dark:bg-brand-red/20 text-brand-red text-xs font-bold rounded-lg uppercase">
+                Pour les Décideurs &amp; Promoteurs d'Écoles
+              </span>
+              <h3 class="text-2xl sm:text-3xl font-heading font-bold text-brand-charcoal dark:text-white">
+                Faites de votre école la référence académique de votre ville
+              </h3>
+              <p class="text-sm sm:text-base text-brand-grey dark:text-gray-300 leading-relaxed">
+                En tant que promoteur ou directeur, votre réputation dépend directement du nombre de mentions au Bac et au BFEM. AME BAC AK BFEM vous apporte un avantage concurrentiel majeur pour attirer et fidéliser les meilleures familles.
+              </p>
+              <ul class="space-y-3 text-sm text-brand-charcoal dark:text-gray-200">
+                <li class="flex items-center gap-3">
+                  <span class="w-6 h-6 rounded-full bg-emerald-100 dark:bg-emerald-900/40 text-emerald-600 flex items-center justify-center shrink-0 text-xs font-bold">✓</span>
+                  <span><strong>Augmentation des inscriptions :</strong> Un argument de vente décisif lors des journées portes ouvertes.</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <span class="w-6 h-6 rounded-full bg-emerald-100 dark:bg-emerald-900/40 text-emerald-600 flex items-center justify-center shrink-0 text-xs font-bold">✓</span>
+                  <span><strong>Supervision en temps réel :</strong> Suivez l'assiduité des professeurs et l'avancement exact du programme national.</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <span class="w-6 h-6 rounded-full bg-emerald-100 dark:bg-emerald-900/40 text-emerald-600 flex items-center justify-center shrink-0 text-xs font-bold">✓</span>
+                  <span><strong>Marque blanche disponible :</strong> La plateforme peut porter le logo et les couleurs de votre établissement.</span>
+                </li>
+              </ul>
+              <div class="pt-4">
+                <a href="#demo-form" class="inline-flex items-center px-6 py-3 rounded-xl bg-brand-red text-white text-sm font-bold shadow-md hover:bg-brand-darkred">
+                  Planifier un échange directeur
+                </a>
+              </div>
+            </div>
+            <!-- Photo authentique du Directeur dans son bureau d'école -->
+            <div class="lg:col-span-5 relative rounded-2xl overflow-hidden shadow-lg border border-gray-100 dark:border-brand-borderdark">
+              <img src="./assets/images/director-portrait.jpg" alt="Directeur d'école privée au Sénégal consultant son tableau de bord" class="w-full h-80 object-cover object-top" loading="lazy">
+              <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-gray-950/90 to-transparent p-4 text-white text-xs">
+                <div class="font-bold">M. Diallo, Promoteur d'établissement</div>
+                <div class="text-gray-300">« Notre taux de mention au Bac S2 a grimpé de 28% dès la première année. »</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROFIL 2 : ENSEIGNANT (Caché) -->
+        <div id="profile-enseignant" class="profile-panel hidden">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <div class="lg:col-span-7 space-y-5">
+              <span class="px-3 py-1 bg-brand-lightred dark:bg-brand-red/20 text-brand-red text-xs font-bold rounded-lg uppercase">
+                Pour le Corps Enseignant
+              </span>
+              <h3 class="text-2xl sm:text-3xl font-heading font-bold text-brand-charcoal dark:text-white">
+                Gagnez jusqu'à 6 heures par semaine sur vos corrections
+              </h3>
+              <p class="text-sm sm:text-base text-brand-grey dark:text-gray-300 leading-relaxed">
+                Les professeurs ne sont plus submergés par la gestion manuelle. Ils disposent d'une banque d'exercices complète conforme au programme officiel et de quiz auto-corrigés pour se concentrer sur l'accompagnement individuel.
+              </p>
+              <ul class="space-y-3 text-sm text-brand-charcoal dark:text-gray-200">
+                <li class="flex items-center gap-3">
+                  <span class="w-6 h-6 rounded-full bg-emerald-100 dark:bg-emerald-900/40 text-emerald-600 flex items-center justify-center shrink-0 text-xs font-bold">✓</span>
+                  <span><strong>Banque de devoirs et d'examens types :</strong> Des milliers de questions prêtes à être assignées en 2 clics.</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <span class="w-6 h-6 rounded-full bg-emerald-100 dark:bg-emerald-900/40 text-emerald-600 flex items-center justify-center shrink-0 text-xs font-bold">✓</span>
+                  <span><strong>Identification instantanée des blocages :</strong> Savoir exactement quelle question a posé problème à la majorité de la classe.</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <span class="w-6 h-6 rounded-full bg-emerald-100 dark:bg-emerald-900/40 text-emerald-600 flex items-center justify-center shrink-0 text-xs font-bold">✓</span>
+                  <span><strong>Classes virtuelles intégrées :</strong> Assurez vos rattrapages et TD sans quitter la plateforme.</span>
+                </li>
+              </ul>
+              <div class="pt-4">
+                <a href="#demo-form" class="inline-flex items-center px-6 py-3 rounded-xl bg-brand-red text-white text-sm font-bold shadow-md hover:bg-brand-darkred">
+                  Voir la démo Enseignant
+                </a>
+              </div>
+            </div>
+            <div class="lg:col-span-5 bg-gray-50 dark:bg-brand-dark p-6 rounded-2xl border border-gray-100 dark:border-brand-borderdark">
+              <div class="text-xs font-bold text-brand-red uppercase mb-2">Témoignage Professeur</div>
+              <blockquote class="text-sm text-brand-charcoal dark:text-gray-300 italic mb-4">
+                « Je n'ai plus besoin de rédiger des corrigés manuscrits à photocopier. Les élèves s'exercent sur AME BAC AK BFEM, je reçois leurs scores avant mon cours et j'attaque directement les notions difficiles. »
+              </blockquote>
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-brand-red text-white font-bold flex items-center justify-center">MD</div>
+                <div>
+                  <div class="font-bold text-xs text-brand-charcoal dark:text-white">M. Moustapha Diagne</div>
+                  <div class="text-[11px] text-brand-grey dark:text-gray-400">Professeur de Sciences Physiques, Dakar</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROFIL 3 : PARENT (Caché) -->
+        <div id="profile-parent" class="profile-panel hidden">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <div class="lg:col-span-7 space-y-5">
+              <span class="px-3 py-1 bg-brand-lightred dark:bg-brand-red/20 text-brand-red text-xs font-bold rounded-lg uppercase">
+                Pour les Parents d'Élèves
+              </span>
+              <h3 class="text-2xl sm:text-3xl font-heading font-bold text-brand-charcoal dark:text-white">
+                Suivez les révisions de votre enfant sans stress, directement sur WhatsApp
+              </h3>
+              <p class="text-sm sm:text-base text-brand-grey dark:text-gray-300 leading-relaxed">
+                Plus besoin d'insister pour voir le carnet de correspondance ou de s'inquiéter à l'approche des examens. Vous recevez chaque semaine la synthèse claire du travail accompli par votre enfant.
+              </p>
+              <ul class="space-y-3 text-sm text-brand-charcoal dark:text-gray-200">
+                <li class="flex items-center gap-3">
+                  <span class="w-6 h-6 rounded-full bg-emerald-100 dark:bg-emerald-900/40 text-emerald-600 flex items-center justify-center shrink-0 text-xs font-bold">✓</span>
+                  <span><strong>Alertes WhatsApp automatiques :</strong> Notifications de notes, assiduité aux cours et devoirs rendus.</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <span class="w-6 h-6 rounded-full bg-emerald-100 dark:bg-emerald-900/40 text-emerald-600 flex items-center justify-center shrink-0 text-xs font-bold">✓</span>
+                  <span><strong>Économies substantielles :</strong> Réduction des dépenses en cours particuliers et manuels parascolaires coûteux.</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <span class="w-6 h-6 rounded-full bg-emerald-100 dark:bg-emerald-900/40 text-emerald-600 flex items-center justify-center shrink-0 text-xs font-bold">✓</span>
+                  <span><strong>Tranquillité d'esprit :</strong> Vous savez exactement si votre enfant est prêt pour les épreuves officielles.</span>
+                </li>
+              </ul>
+              <div class="pt-4">
+                <a href="#demo-form" class="inline-flex items-center px-6 py-3 rounded-xl bg-brand-red text-white text-sm font-bold shadow-md hover:bg-brand-darkred">
+                  Découvrir l'Espace Parents
+                </a>
+              </div>
+            </div>
+            <div class="lg:col-span-5 bg-gray-50 dark:bg-brand-dark p-6 rounded-2xl border border-gray-100 dark:border-brand-borderdark">
+              <div class="p-3 bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800 rounded-xl mb-4">
+                <div class="flex items-center gap-2 text-emerald-700 dark:text-emerald-400 font-bold text-xs mb-1">
+                  <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z"/></svg>
+                  <span>Exemple de message WhatsApp reçu par le parent</span>
+                </div>
+                <p class="text-xs text-brand-charcoal dark:text-gray-300">
+                  « Bonjour M. Sow. Cette semaine, Aminata a complété 4 fiches de révision en Mathématiques et réussi son quiz d'Histoire avec 17/20. Sa progression vers le BFEM est estimée à 92%. Félicitations ! »
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROFIL 4 : ÉLÈVE (Caché) -->
+        <div id="profile-eleve" class="profile-panel hidden">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <div class="lg:col-span-7 space-y-5">
+              <span class="px-3 py-1 bg-brand-lightred dark:bg-brand-red/20 text-brand-red text-xs font-bold rounded-lg uppercase">
+                Pour les Élèves (6ème à Terminale)
+              </span>
+              <h3 class="text-2xl sm:text-3xl font-heading font-bold text-brand-charcoal dark:text-white">
+                « AME sa Bac, AME sa BFEM » sans stress et à ton rythme
+              </h3>
+              <p class="text-sm sm:text-base text-brand-grey dark:text-gray-300 leading-relaxed">
+                Apprends avec les meilleurs professeurs du Sénégal. Des vidéos courtes de 5 à 10 minutes qui vont droit au but, des quiz interactifs pour s'auto-évaluer et toutes les annales corrigées pour cartonner le jour J.
+              </p>
+              <ul class="space-y-3 text-sm text-brand-charcoal dark:text-gray-200">
+                <li class="flex items-center gap-3">
+                  <span class="w-6 h-6 rounded-full bg-emerald-100 dark:bg-emerald-900/40 text-emerald-600 flex items-center justify-center shrink-0 text-xs font-bold">✓</span>
+                  <span><strong>Accessible sur ton smartphone :</strong> Révise dans les transports, chez toi ou pendant les vacances, même sans connexion.</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <span class="w-6 h-6 rounded-full bg-emerald-100 dark:bg-emerald-900/40 text-emerald-600 flex items-center justify-center shrink-0 text-xs font-bold">✓</span>
+                  <span><strong>Fiches résumées express :</strong> Toutes les formules de maths, dates d'histoire et schémas de SVT en un coup d'œil.</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <span class="w-6 h-6 rounded-full bg-emerald-100 dark:bg-emerald-900/40 text-emerald-600 flex items-center justify-center shrink-0 text-xs font-bold">✓</span>
+                  <span><strong>Simulations d'épreuves réelles :</strong> Chronomètre et conditions d'examen pour être 100% confiant le jour J.</span>
+                </li>
+              </ul>
+              <div class="pt-4">
+                <a href="#demo-form" class="inline-flex items-center px-6 py-3 rounded-xl bg-brand-red text-white text-sm font-bold shadow-md hover:bg-brand-darkred">
+                  Essayer les quiz interactifs
+                </a>
+              </div>
+            </div>
+            <div class="lg:col-span-5 bg-gray-50 dark:bg-brand-dark p-6 rounded-2xl border border-gray-100 dark:border-brand-borderdark">
+              <div class="text-center p-4 bg-brand-lightred dark:bg-brand-red/10 rounded-xl">
+                <div class="text-3xl font-heading font-extrabold text-brand-red mb-1">94.2%</div>
+                <div class="text-xs font-bold text-brand-charcoal dark:text-white">Taux d'admission de nos élèves utilisateurs</div>
+                <div class="text-[11px] text-brand-grey dark:text-gray-400 mt-1">Sessions BFEM &amp; Baccalauréat 2024 &amp; 2025</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================================================= -->
+  <!-- 9. CHIFFRES CLÉS (COMPTEURS ANIMÉS SUR FOND ROUGE)                       -->
+  <!-- ========================================================================= -->
+  <section class="py-16 sm:py-20 bg-gradient-to-br from-brand-red via-brand-darkred to-brand-darkred text-white relative overflow-hidden shadow-inner" id="chiffres-cles">
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-white/10 via-transparent to-transparent pointer-events-none"></div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="px-3.5 py-1 rounded-full bg-white/20 text-white text-xs font-bold uppercase tracking-wider">
+          L'Impact en Chiffres
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-heading font-extrabold mt-3 text-white">
+          La preuve par les résultats
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+        
+        <!-- Compteur 1 -->
+        <div class="p-4 sm:p-6 rounded-2xl bg-white/10 backdrop-blur-xs border border-white/15">
+          <div class="text-4xl sm:text-5xl lg:text-6xl font-heading font-black tracking-tight mb-2">
+            <span class="counter-val" data-target="45">0</span><span class="text-red-200">+</span>
+          </div>
+          <div class="text-sm sm:text-base font-semibold text-white">Écoles Partenaires</div>
+          <div class="text-xs text-red-200 mt-1">À Dakar, Thiès et en régions</div>
+        </div>
+
+        <!-- Compteur 2 -->
+        <div class="p-4 sm:p-6 rounded-2xl bg-white/10 backdrop-blur-xs border border-white/15">
+          <div class="text-4xl sm:text-5xl lg:text-6xl font-heading font-black tracking-tight mb-2">
+            <span class="counter-val" data-target="28500">0</span><span class="text-red-200">+</span>
+          </div>
+          <div class="text-sm sm:text-base font-semibold text-white">Élèves Accompagnés</div>
+          <div class="text-xs text-red-200 mt-1">De la 6ème à la Terminale</div>
+        </div>
+
+        <!-- Compteur 3 -->
+        <div class="p-4 sm:p-6 rounded-2xl bg-white/10 backdrop-blur-xs border border-white/15">
+          <div class="text-4xl sm:text-5xl lg:text-6xl font-heading font-black tracking-tight mb-2">
+            <span class="counter-val" data-target="94.2" data-decimal="1">0</span><span class="text-red-200">%</span>
+          </div>
+          <div class="text-sm sm:text-base font-semibold text-white">Taux de Réussite</div>
+          <div class="text-xs text-red-200 mt-1">Au BFEM et au Baccalauréat</div>
+        </div>
+
+        <!-- Compteur 4 -->
+        <div class="p-4 sm:p-6 rounded-2xl bg-white/10 backdrop-blur-xs border border-white/15">
+          <div class="text-4xl sm:text-5xl lg:text-6xl font-heading font-black tracking-tight mb-2">
+            <span class="counter-val" data-target="3200">0</span><span class="text-red-200">+</span>
+          </div>
+          <div class="text-sm sm:text-base font-semibold text-white">Heures de Cours &amp; Annales</div>
+          <div class="text-xs text-red-200 mt-1">Conformes programme officiel</div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================================================= -->
+  <!-- 10. TÉMOIGNAGES (CARROUSEL & CARTES AVEC EMPLACEMENTS À REMPLIR)          -->
+  <!-- ========================================================================= -->
+  <!-- REMPLACER ICI : Vous pouvez modifier les noms, écoles et avis ci-dessous pour refléter vos témoignages réels -->
+  <section class="py-20 lg:py-28 bg-white dark:bg-brand-dark" id="temoignages">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+        <div>
+          <span class="px-3.5 py-1 rounded-full bg-brand-lightred dark:bg-brand-red/10 text-brand-red text-xs font-extrabold uppercase tracking-wider">
+            Retours d'Expérience
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-brand-charcoal dark:text-white mt-3">
+            Ce que disent les directeurs, enseignants et parents
+          </h2>
+        </div>
+
+        <!-- Contrôles du Carrousel -->
+        <div class="flex items-center gap-3">
+          <button id="prevTestimonialBtn" type="button" aria-label="Témoignage précédent" class="w-12 h-12 rounded-2xl border border-gray-200 dark:border-brand-borderdark flex items-center justify-center text-brand-charcoal dark:text-white hover:bg-brand-red hover:text-white hover:border-brand-red transition-all">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+          </button>
+          <button id="nextTestimonialBtn" type="button" aria-label="Témoignage suivant" class="w-12 h-12 rounded-2xl border border-gray-200 dark:border-brand-borderdark flex items-center justify-center text-brand-charcoal dark:text-white hover:bg-brand-red hover:text-white hover:border-brand-red transition-all">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Carrousel de Témoignages -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="testimonialsGrid">
+        
+        <!-- Témoignage 1 : Directeur -->
+        <div class="testimonial-card bg-gray-50 dark:bg-brand-carddark p-8 rounded-3xl border border-gray-100 dark:border-brand-borderdark flex flex-col justify-between hover:shadow-subtle-red transition-all duration-300">
+          <div>
+            <div class="flex items-center gap-1 text-amber-400 mb-4">
+              ★★★★★
+            </div>
+            <p class="text-sm text-brand-charcoal dark:text-gray-200 italic leading-relaxed mb-6">
+              « Intégrer AME BAC AK BFEM a été le meilleur investissement pour notre groupe scolaire. Nos professeurs ont immédiatement adopté l'outil et les parents adorent recevoir le suivi régulier sur WhatsApp. Notre école affiche 98% d'admis au Baccalauréat cette année ! »
+            </p>
+          </div>
+          <div class="flex items-center gap-4 pt-4 border-t border-gray-200/60 dark:border-brand-borderdark">
+            <div class="w-12 h-12 rounded-2xl bg-brand-red text-white font-heading font-black flex items-center justify-center shrink-0">
+              BN
+            </div>
+            <div>
+              <div class="font-heading font-bold text-sm text-brand-charcoal dark:text-white">M. Babacar Ndiaye</div>
+              <div class="text-xs text-brand-red font-semibold">Directeur Général &amp; Fondateur</div>
+              <div class="text-[11px] text-brand-grey dark:text-gray-400">Groupe Scolaire de l'Avenir (Dakar)</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Témoignage 2 : Enseignante -->
+        <div class="testimonial-card bg-gray-50 dark:bg-brand-carddark p-8 rounded-3xl border border-gray-100 dark:border-brand-borderdark flex flex-col justify-between hover:shadow-subtle-red transition-all duration-300">
+          <div>
+            <div class="flex items-center gap-1 text-amber-400 mb-4">
+              ★★★★★
+            </div>
+            <p class="text-sm text-brand-charcoal dark:text-gray-200 italic leading-relaxed mb-6">
+              « En Terminale S2, le niveau en Mathématiques et Sciences Physiques est impitoyable. Grâce aux fiches et aux annales vidéo détaillées, mes élèves arrivent en classe avec les concepts déjà assimilés. Nous passons plus de temps sur les cas complexes d'examen. »
+            </p>
+          </div>
+          <div class="flex items-center gap-4 pt-4 border-t border-gray-200/60 dark:border-brand-borderdark">
+            <div class="w-12 h-12 rounded-2xl bg-brand-charcoal dark:bg-white text-white dark:text-brand-charcoal font-heading font-black flex items-center justify-center shrink-0">
+              FK
+            </div>
+            <div>
+              <div class="font-heading font-bold text-sm text-brand-charcoal dark:text-white">Mme Fatou Kiné Diop</div>
+              <div class="text-xs text-brand-red font-semibold">Professeur de Mathématiques (Terminale S)</div>
+              <div class="text-[11px] text-brand-grey dark:text-gray-400">Collège Privé Sainte-Thérèse (Thiès)</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Témoignage 3 : Parent -->
+        <div class="testimonial-card bg-gray-50 dark:bg-brand-carddark p-8 rounded-3xl border border-gray-100 dark:border-brand-borderdark flex flex-col justify-between hover:shadow-subtle-red transition-all duration-300">
+          <div>
+            <div class="flex items-center gap-1 text-amber-400 mb-4">
+              ★★★★★
+            </div>
+            <p class="text-sm text-brand-charcoal dark:text-gray-200 italic leading-relaxed mb-6">
+              « Avec mon travail à l'extérieur, il m'était difficile de vérifier les cahiers chaque soir. Les rapports automatiques et les alertes de devoirs sur WhatsApp me rassurent complètement. Mon fils a obtenu son BFEM avec mention Bien sans cours à domicile onéreux. »
+            </p>
+          </div>
+          <div class="flex items-center gap-4 pt-4 border-t border-gray-200/60 dark:border-brand-borderdark">
+            <div class="w-12 h-12 rounded-2xl bg-emerald-600 text-white font-heading font-black flex items-center justify-center shrink-0">
+              AF
+            </div>
+            <div>
+              <div class="font-heading font-bold text-sm text-brand-charcoal dark:text-white">M. Abdoulaye Fall</div>
+              <div class="text-xs text-brand-red font-semibold">Cadre bancaire &amp; Parent d'élève</div>
+              <div class="text-[11px] text-brand-grey dark:text-gray-400">Parent d'élèves en 3ème et 1ère S (Dakar)</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================================================= -->
+  <!-- 11. TARIFS (3 FORMULES AVEC SÉLECTEUR MENSUEL / ANNUEL EN FCFA)            -->
+  <!-- ========================================================================= -->
+  <!-- REMPLACER ICI : Vous pouvez adapter les montants en FCFA selon votre politique tarifaire -->
+  <section class="py-20 lg:py-28 bg-gray-50/70 dark:bg-brand-dark/50" id="tarifs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-12 space-y-4">
+        <span class="px-3.5 py-1 rounded-full bg-brand-lightred dark:bg-brand-red/10 text-brand-red text-xs font-extrabold uppercase tracking-wider">
+          Tarification Adaptée au Sénégal
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-brand-charcoal dark:text-white">
+          Des formules claires, rentables dès le premier mois
+        </h2>
+        <p class="text-base sm:text-lg text-brand-grey dark:text-gray-300">
+          Facturation par élève ou pack global par établissement scolaire. Aucuns frais cachés.
+        </p>
+      </div>
+
+      <!-- Sélecteur Mensuel / Annuel -->
+      <div class="flex items-center justify-center gap-4 mb-14">
+        <span class="text-sm font-semibold text-brand-charcoal dark:text-gray-200">Facturation Mensuelle</span>
+        <button type="button" id="billingPeriodToggle" aria-label="Changer période de facturation" class="w-14 h-8 bg-brand-red rounded-full p-1 transition-colors relative focus:outline-none">
+          <div id="billingToggleBall" class="w-6 h-6 bg-white rounded-full shadow-md transform transition-transform translate-x-6"></div>
+        </button>
+        <span class="text-sm font-semibold text-brand-charcoal dark:text-gray-200 flex items-center gap-1.5">
+          <span>Facturation Annuelle</span>
+          <span class="px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-700 text-xs font-extrabold">2 mois offerts</span>
+        </span>
+      </div>
+
+      <!-- Grille des 3 Formules -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+        
+        <!-- Formule 1 : Essentiel (Collège) -->
+        <div class="bg-white dark:bg-brand-carddark p-8 rounded-3xl border border-gray-200 dark:border-brand-borderdark flex flex-col justify-between shadow-sm">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs font-bold uppercase tracking-wider text-brand-grey dark:text-gray-400">Pour débuter</span>
+              <span class="px-2.5 py-1 bg-gray-100 dark:bg-brand-dark text-xs font-bold text-gray-600 dark:text-gray-300 rounded-lg">Collège (6e à 3e)</span>
+            </div>
+            <h3 class="text-2xl font-heading font-extrabold text-brand-charcoal dark:text-white">Formule Essentiel</h3>
+            <p class="text-xs text-brand-grey dark:text-gray-300 mt-2 mb-6">Idéal pour digitaliser le cycle moyen et assurer la réussite au BFEM.</p>
+            
+            <div class="flex items-baseline gap-2 mb-6">
+              <span class="price-val text-4xl font-heading font-black text-brand-charcoal dark:text-white" data-monthly="1 500" data-annual="12 500">12 500</span>
+              <span class="text-sm font-bold text-brand-grey dark:text-gray-400">FCFA <span class="price-unit">/ élève / an</span></span>
+            </div>
+
+            <ul class="space-y-3.5 text-xs text-brand-charcoal dark:text-gray-300 mb-8 border-t border-gray-100 dark:border-brand-borderdark pt-6">
+              <li class="flex items-center gap-2.5">
+                <svg class="w-4 h-4 text-emerald-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Accès cours &amp; quiz de la 6ème à la 3ème</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <svg class="w-4 h-4 text-emerald-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Annales officielles BFEM 2015-2024 corrigées</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <svg class="w-4 h-4 text-emerald-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Tableau de bord enseignant standard</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <svg class="w-4 h-4 text-emerald-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Mode hors-ligne / Data-Saver</span>
+              </li>
+              <li class="flex items-center gap-2.5 text-gray-400">
+                <svg class="w-4 h-4 text-gray-300 dark:text-gray-600 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+                <span class="line-through">Lycée &amp; Baccalauréat (Séries L &amp; S)</span>
+              </li>
+            </ul>
+          </div>
+
+          <a href="#demo-form" class="w-full text-center py-3.5 px-4 rounded-xl border border-gray-300 dark:border-brand-borderdark font-bold text-sm text-brand-charcoal dark:text-white hover:border-brand-red hover:text-brand-red transition-colors">
+            Choisir Essentiel
+          </a>
+        </div>
+
+        <!-- Formule 2 : PRO (Recommandée - Mise en avant en Rouge) -->
+        <div class="relative bg-white dark:bg-brand-carddark p-8 sm:p-9 rounded-3xl border-2 border-brand-red shadow-glow-red flex flex-col justify-between transform lg:-translate-y-2">
+          
+          <!-- Badge Recommandé -->
+          <div class="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-brand-red text-white text-xs font-heading font-extrabold uppercase tracking-wider rounded-full shadow-md">
+            ★ Formule Recommandée par les Écoles
+          </div>
+
+          <div>
+            <div class="flex items-center justify-between mb-4 mt-2">
+              <span class="text-xs font-bold uppercase tracking-wider text-brand-red">Offre Complète</span>
+              <span class="px-2.5 py-1 bg-brand-lightred dark:bg-brand-red/20 text-xs font-bold text-brand-red rounded-lg">6e à Terminale</span>
+            </div>
+            <h3 class="text-2xl sm:text-3xl font-heading font-extrabold text-brand-charcoal dark:text-white">Formule Pro Excellence</h3>
+            <p class="text-xs text-brand-grey dark:text-gray-300 mt-2 mb-6">La solution complète pour tout l'établissement avec espace parents et annales Bac &amp; BFEM.</p>
+            
+            <div class="flex items-baseline gap-2 mb-6">
+              <span class="price-val text-4xl sm:text-5xl font-heading font-black text-brand-red" data-monthly="2 500" data-annual="20 000">20 000</span>
+              <span class="text-sm font-bold text-brand-grey dark:text-gray-400">FCFA <span class="price-unit">/ élève / an</span></span>
+            </div>
+
+            <ul class="space-y-3.5 text-xs text-brand-charcoal dark:text-gray-300 mb-8 border-t border-gray-100 dark:border-brand-borderdark pt-6">
+              <li class="flex items-center gap-2.5 font-semibold">
+                <svg class="w-4 h-4 text-brand-red shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span><strong>Tout le programme : Collège + Lycée (S1, S2, L1, L2, G)</strong></span>
+              </li>
+              <li class="flex items-center gap-2.5 font-semibold">
+                <svg class="w-4 h-4 text-brand-red shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Toutes les annales officielles BFEM &amp; BAC corrigées en vidéo</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <svg class="w-4 h-4 text-brand-red shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Passerelle WhatsApp parents automatisée</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <svg class="w-4 h-4 text-brand-red shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Classes virtuelles illimitées avec rediffusions</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <svg class="w-4 h-4 text-brand-red shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Formation certifiante de vos professeurs (visio ou Dakar)</span>
+              </li>
+            </ul>
+          </div>
+
+          <a href="#demo-form" class="w-full text-center py-4 px-4 rounded-xl bg-brand-red text-white font-extrabold text-sm shadow-lg shadow-brand-red/30 hover:bg-brand-darkred transition-all">
+            Activer l'offre Pro pour mon école
+          </a>
+        </div>
+
+        <!-- Formule 3 : Établissement (Sur-mesure / Marque Blanche) -->
+        <div class="bg-white dark:bg-brand-carddark p-8 rounded-3xl border border-gray-200 dark:border-brand-borderdark flex flex-col justify-between shadow-sm">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs font-bold uppercase tracking-wider text-brand-grey dark:text-gray-400">Grands Comptes</span>
+              <span class="px-2.5 py-1 bg-gray-100 dark:bg-brand-dark text-xs font-bold text-gray-600 dark:text-gray-300 rounded-lg">+500 Élèves</span>
+            </div>
+            <h3 class="text-2xl font-heading font-extrabold text-brand-charcoal dark:text-white">Établissement</h3>
+            <p class="text-xs text-brand-grey dark:text-gray-300 mt-2 mb-6">Pour les groupes scolaires et complexes privés recherchant une personnalisation totale.</p>
+            
+            <div class="flex items-baseline gap-2 mb-6">
+              <span class="text-3xl font-heading font-black text-brand-charcoal dark:text-white">Sur Devis</span>
+              <span class="text-xs font-bold text-brand-grey dark:text-gray-400">Tarif dégressif par palier</span>
+            </div>
+
+            <ul class="space-y-3.5 text-xs text-brand-charcoal dark:text-gray-300 mb-8 border-t border-gray-100 dark:border-brand-borderdark pt-6">
+              <li class="flex items-center gap-2.5">
+                <svg class="w-4 h-4 text-emerald-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span><strong>Marque blanche complète (logo et nom de l'école)</strong></span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <svg class="w-4 h-4 text-emerald-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Responsable de compte pédagogique dédié 7j/7</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <svg class="w-4 h-4 text-emerald-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Formations présentielles sur site dans votre école</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <svg class="w-4 h-4 text-emerald-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Intégration sur-mesure avec vos logiciels de scolarité</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <svg class="w-4 h-4 text-emerald-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Facilités de paiement échelonné par trimestre</span>
+              </li>
+            </ul>
+          </div>
+
+          <a href="#demo-form" class="w-full text-center py-3.5 px-4 rounded-xl border border-gray-300 dark:border-brand-borderdark font-bold text-sm text-brand-charcoal dark:text-white hover:border-brand-red hover:text-brand-red transition-colors">
+            Demander un devis sur-mesure
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================================================= -->
+  <!-- 12. FAQ (ACCORDÉON DE 8 QUESTIONS CLÉS)                                    -->
+  <!-- ========================================================================= -->
+  <section class="py-20 lg:py-28 bg-white dark:bg-brand-dark" id="faq">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-16 space-y-4">
+        <span class="px-3.5 py-1 rounded-full bg-brand-lightred dark:bg-brand-red/10 text-brand-red text-xs font-extrabold uppercase tracking-wider">
+          Foire Aux Questions
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-brand-charcoal dark:text-white">
+          Tout ce que vous devez savoir avant d'équiper votre école
+        </h2>
+        <p class="text-base sm:text-lg text-brand-grey dark:text-gray-300">
+          Des réponses claires et précises aux interrogations des promoteurs et directeurs d'études.
+        </p>
+      </div>
+
+      <div class="space-y-4" id="faqAccordion">
+        
+        <!-- Question 1 -->
+        <div class="border border-gray-200 dark:border-brand-borderdark rounded-2xl overflow-hidden bg-white dark:bg-brand-carddark">
+          <button type="button" class="faq-toggle w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-heading font-bold text-base sm:text-lg text-brand-charcoal dark:text-white hover:text-brand-red dark:hover:text-brand-red transition-colors" aria-expanded="true">
+            <span>1. Les contenus sont-ils strictement conformes au programme officiel du Sénégal ?</span>
+            <svg class="faq-chevron w-5 h-5 shrink-0 transform rotate-180 transition-transform text-brand-red" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-content px-6 pb-6 text-sm text-brand-grey dark:text-gray-300 leading-relaxed block">
+            Absolument. Tous les cours vidéo, résumés PDF et exercices sont conçus et vérifiés par des inspecteurs et professeurs titulaires en poste au Sénégal. La progression pédagogique respecte à la lettre les découpages trimestriels du Ministère de l'Éducation Nationale (MEN), tant pour le BFEM que pour les filières L et S du Baccalauréat.
+          </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="border border-gray-200 dark:border-brand-borderdark rounded-2xl overflow-hidden bg-white dark:bg-brand-carddark">
+          <button type="button" class="faq-toggle w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-heading font-bold text-base sm:text-lg text-brand-charcoal dark:text-white hover:text-brand-red dark:hover:text-brand-red transition-colors" aria-expanded="false">
+            <span>2. Comment les élèves peuvent-ils travailler si la connexion internet est lente ou coupée ?</span>
+            <svg class="faq-chevron w-5 h-5 shrink-0 transform transition-transform text-brand-red" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-content px-6 pb-6 text-sm text-brand-grey dark:text-gray-300 leading-relaxed hidden">
+            Notre plateforme intègre une technologie exclusive « Data-Saver ». Les élèves peuvent télécharger les cours et exercices en amont (par exemple sur le réseau Wi-Fi de l'école ou lors d'une connexion temporaire), puis les réviser hors-ligne chez eux. La consommation de données mobiles est réduite de 75% par rapport aux plateformes vidéo traditionnelles.
+          </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="border border-gray-200 dark:border-brand-borderdark rounded-2xl overflow-hidden bg-white dark:bg-brand-carddark">
+          <button type="button" class="faq-toggle w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-heading font-bold text-base sm:text-lg text-brand-charcoal dark:text-white hover:text-brand-red dark:hover:text-brand-red transition-colors" aria-expanded="false">
+            <span>3. Nos professeurs ont des niveaux variés en informatique. Comment les formez-vous ?</span>
+            <svg class="faq-chevron w-5 h-5 shrink-0 transform transition-transform text-brand-red" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-content px-6 pb-6 text-sm text-brand-grey dark:text-gray-300 leading-relaxed hidden">
+            L'interface a été conçue pour être aussi simple d'utilisation que WhatsApp. De plus, chaque abonnement école inclut une session de prise en main de 2 heures pour vos enseignants, animée par nos formateurs pédagogiques (en présentiel pour Dakar et Thiès, ou en visioconférence). Des tutoriels vidéo courts en wolof et en français sont également mis à leur disposition.
+          </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="border border-gray-200 dark:border-brand-borderdark rounded-2xl overflow-hidden bg-white dark:bg-brand-carddark">
+          <button type="button" class="faq-toggle w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-heading font-bold text-base sm:text-lg text-brand-charcoal dark:text-white hover:text-brand-red dark:hover:text-brand-red transition-colors" aria-expanded="false">
+            <span>4. Quels sont les moyens de paiement acceptés pour l'école et les familles ?</span>
+            <svg class="faq-chevron w-5 h-5 shrink-0 transform transition-transform text-brand-red" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-content px-6 pb-6 text-sm text-brand-grey dark:text-gray-300 leading-relaxed hidden">
+            Nous acceptons les moyens les plus populaires et sécurisés au Sénégal : Wave, Orange Money, Free Money, virement bancaire sur compte CBAO/Ecobank/BOA, chèque d'établissement et carte bancaire (Visa / Mastercard). Les factures pro-forma et reçus conformes à l'OHADA sont délivrés instantanément.
+          </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="border border-gray-200 dark:border-brand-borderdark rounded-2xl overflow-hidden bg-white dark:bg-brand-carddark">
+          <button type="button" class="faq-toggle w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-heading font-bold text-base sm:text-lg text-brand-charcoal dark:text-white hover:text-brand-red dark:hover:text-brand-red transition-colors" aria-expanded="false">
+            <span>5. Combien de temps prend le déploiement complet dans notre école ?</span>
+            <svg class="faq-chevron w-5 h-5 shrink-0 transform transition-transform text-brand-red" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-content px-6 pb-6 text-sm text-brand-grey dark:text-gray-300 leading-relaxed hidden">
+            Une fois la liste de vos élèves et classes transmise (au format Excel ou papier), votre plateforme école est configurée sous 24 à 48 heures. Vos enseignants et élèves peuvent commencer à réviser dès le surlendemain.
+          </div>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="border border-gray-200 dark:border-brand-borderdark rounded-2xl overflow-hidden bg-white dark:bg-brand-carddark">
+          <button type="button" class="faq-toggle w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-heading font-bold text-base sm:text-lg text-brand-charcoal dark:text-white hover:text-brand-red dark:hover:text-brand-red transition-colors" aria-expanded="false">
+            <span>6. Les parents ont-ils besoin d'installer une nouvelle application lourde ?</span>
+            <svg class="faq-chevron w-5 h-5 shrink-0 transform transition-transform text-brand-red" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-content px-6 pb-6 text-sm text-brand-grey dark:text-gray-300 leading-relaxed hidden">
+            Non, et c'est ce qui fait le succès d'AME BAC AK BFEM ! Les parents reçoivent leurs récapitulatifs, notes et alertes directement sur WhatsApp, l'application qu'ils utilisent déjà tous les jours. Un lien sécurisé leur permet d'accéder au carnet numérique sans mot de passe complexe à mémoriser.
+          </div>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="border border-gray-200 dark:border-brand-borderdark rounded-2xl overflow-hidden bg-white dark:bg-brand-carddark">
+          <button type="button" class="faq-toggle w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-heading font-bold text-base sm:text-lg text-brand-charcoal dark:text-white hover:text-brand-red dark:hover:text-brand-red transition-colors" aria-expanded="false">
+            <span>7. Les données de nos élèves et de notre établissement sont-elles protégées ?</span>
+            <svg class="faq-chevron w-5 h-5 shrink-0 transform transition-transform text-brand-red" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-content px-6 pb-6 text-sm text-brand-grey dark:text-gray-300 leading-relaxed hidden">
+            La sécurité et la confidentialité sont notre priorité absolue. Vos données restent la propriété exclusive de votre établissement. Nous respectons scrupuleusement la loi sénégalaise sur la protection des données personnelles (CDP) et garantissons un hébergement cloud crypté avec sauvegardes quotidiennes.
+          </div>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="border border-gray-200 dark:border-brand-borderdark rounded-2xl overflow-hidden bg-white dark:bg-brand-carddark">
+          <button type="button" class="faq-toggle w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-heading font-bold text-base sm:text-lg text-brand-charcoal dark:text-white hover:text-brand-red dark:hover:text-brand-red transition-colors" aria-expanded="false">
+            <span>8. Pouvons-nous tester la plateforme avec une classe pilote avant de nous engager ?</span>
+            <svg class="faq-chevron w-5 h-5 shrink-0 transform transition-transform text-brand-red" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-content px-6 pb-6 text-sm text-brand-grey dark:text-gray-300 leading-relaxed hidden">
+            Oui, tout à fait ! Nous offrons un essai pilote de 14 jours sans engagement pour une classe de 3ème ou de Terminale de votre choix. Cela vous permet de constater concrètement l'adhésion des élèves et l'enthousiasme de vos professeurs avant toute décision budgétaire.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================================================= -->
+  <!-- 13. APPEL À L'ACTION FINAL (BLOC ROUGE AVEC FORMULAIRE DE DÉMO)           -->
+  <!-- ========================================================================= -->
+  <section class="py-20 lg:py-24 bg-gradient-to-br from-brand-red via-brand-darkred to-brand-darkred text-white relative" id="demo-form">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Arguments d'action à gauche -->
+        <div class="lg:col-span-6 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/20 text-white text-xs font-bold uppercase tracking-wider">
+            <span>Opportunité Partenariat 2025-2026</span>
+          </div>
+
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-heading font-black tracking-tight text-white leading-tight">
+            Prêt à faire briller votre établissement au BFEM et au Bac ?
+          </h2>
+
+          <p class="text-base sm:text-lg text-red-100 leading-relaxed">
+            Rejoignez les dizaines d'écoles privées qui font la différence au Sénégal. Remplissez ce formulaire pour recevoir un accès démo complet et une simulation budgétaire personnalisée sous 24 heures.
+          </p>
+
+          <div class="space-y-4 pt-2">
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center font-bold text-white shrink-0">✓</div>
+              <span class="text-sm font-medium text-red-50">Accès gratuit de 14 jours pour votre équipe de direction</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center font-bold text-white shrink-0">✓</div>
+              <span class="text-sm font-medium text-red-50">Démonstration en présentiel à Dakar ou en visio selon vos souhaits</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center font-bold text-white shrink-0">✓</div>
+              <span class="text-sm font-medium text-red-50">Aucun engagement requis</span>
+            </div>
+          </div>
+
+          <!-- Bouton direct WhatsApp sous l'argumentaire -->
+          <div class="pt-6">
+            <a href="https://wa.me/221766297742?text=Bonjour%2C%20je%20souhaite%20une%20d%C3%A9mo%20de%20AME%20BAC%20AK%20BFEM%20pour%20mon%20%C3%A9tablissement" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 px-6 py-3.5 rounded-2xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm shadow-lg hover:shadow-xl transition-all">
+              <!-- Icône WhatsApp SVG -->
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.071.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.073.043.42-.101.825z"/>
+                <path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2.05 22l4.978-1.306A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.697 0-3.275-.516-4.595-1.398l-.329-.22-2.955.775.789-2.88-.242-.385A8.136 8.136 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/>
+              </svg>
+              <span>Échanger sur WhatsApp (+221 76 629 77 42)</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- FORMULAIRE DE DEMANDE DE DÉMO (Validation côté client & Toast) -->
+        <div class="lg:col-span-6 bg-white dark:bg-brand-carddark text-brand-charcoal dark:text-white p-8 sm:p-10 rounded-3xl shadow-2xl border border-white/20">
+          
+          <div class="mb-6">
+            <h3 class="text-2xl font-heading font-extrabold text-brand-charcoal dark:text-white">Demande de Démo Établissement</h3>
+            <p class="text-xs text-brand-grey dark:text-gray-400 mt-1">Réponse garantie en moins de 24 heures ouvrées.</p>
+          </div>
+
+          <form id="demoRequestForm" class="space-y-4" novalidate>
+            
+            <!-- Nom de l'école -->
+            <div>
+              <label for="schoolName" class="block text-xs font-bold uppercase tracking-wider text-brand-grey dark:text-gray-300 mb-1.5">
+                Nom de l'établissement scolaire *
+              </label>
+              <input 
+                type="text" 
+                id="schoolName" 
+                name="schoolName" 
+                required 
+                placeholder="Ex : Groupe Scolaire Excellence Dakar" 
+                class="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-brand-borderdark bg-gray-50 dark:bg-brand-dark focus:bg-white dark:focus:bg-brand-dark focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 outline-none text-sm transition-all"
+              >
+              <span class="error-msg hidden text-xs text-brand-red mt-1">Veuillez indiquer le nom de votre établissement.</span>
+            </div>
+
+            <!-- Nom & Fonction en 2 colonnes -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="contactName" class="block text-xs font-bold uppercase tracking-wider text-brand-grey dark:text-gray-300 mb-1.5">
+                  Votre Nom &amp; Prénom *
+                </label>
+                <input 
+                  type="text" 
+                  id="contactName" 
+                  name="contactName" 
+                  required 
+                  placeholder="Ex : M. Amadou Ba" 
+                  class="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-brand-borderdark bg-gray-50 dark:bg-brand-dark focus:bg-white dark:focus:bg-brand-dark focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 outline-none text-sm transition-all"
+                >
+                <span class="error-msg hidden text-xs text-brand-red mt-1">Votre nom est requis.</span>
+              </div>
+
+              <div>
+                <label for="contactRole" class="block text-xs font-bold uppercase tracking-wider text-brand-grey dark:text-gray-300 mb-1.5">
+                  Votre Fonction *
+                </label>
+                <select 
+                  id="contactRole" 
+                  name="contactRole" 
+                  required 
+                  class="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-brand-borderdark bg-gray-50 dark:bg-brand-dark focus:bg-white dark:focus:bg-brand-dark focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 outline-none text-sm transition-all"
+                >
+                  <option value="">Sélectionnez votre rôle</option>
+                  <option value="Directeur / Promoteur">Directeur / Promoteur</option>
+                  <option value="Censeur / Directeur des Études">Censeur / Directeur des Études</option>
+                  <option value="Coordinateur Pédagogique">Coordinateur Pédagogique</option>
+                  <option value="Enseignant Référent">Enseignant Référent</option>
+                  <option value="Représentant Parents d'Élèves">Représentant Parents d'Élèves</option>
+                </select>
+                <span class="error-msg hidden text-xs text-brand-red mt-1">Sélectionnez une fonction.</span>
+              </div>
+            </div>
+
+            <!-- Téléphone / WhatsApp & Ville -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="contactPhone" class="block text-xs font-bold uppercase tracking-wider text-brand-grey dark:text-gray-300 mb-1.5">
+                  Téléphone / WhatsApp *
+                </label>
+                <input 
+                  type="tel" 
+                  id="contactPhone" 
+                  name="contactPhone" 
+                  required 
+                  placeholder="+221 7X XXX XX XX" 
+                  class="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-brand-borderdark bg-gray-50 dark:bg-brand-dark focus:bg-white dark:focus:bg-brand-dark focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 outline-none text-sm transition-all"
+                >
+                <span class="error-msg hidden text-xs text-brand-red mt-1">Numéro de téléphone requis.</span>
+              </div>
+
+              <div>
+                <label for="schoolCity" class="block text-xs font-bold uppercase tracking-wider text-brand-grey dark:text-gray-300 mb-1.5">
+                  Ville / Région *
+                </label>
+                <select 
+                  id="schoolCity" 
+                  name="schoolCity" 
+                  required 
+                  class="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-brand-borderdark bg-gray-50 dark:bg-brand-dark focus:bg-white dark:focus:bg-brand-dark focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 outline-none text-sm transition-all"
+                >
+                  <option value="Dakar">Dakar et banlieue</option>
+                  <option value="Thiès">Thiès / Mbour</option>
+                  <option value="Saint-Louis">Saint-Louis</option>
+                  <option value="Kaolack">Kaolack</option>
+                  <option value="Ziguinchor">Ziguinchor</option>
+                  <option value="Autre région Sénégal">Autre région du Sénégal</option>
+                  <option value="Autre pays francophone">Autre pays (Afrique de l'Ouest)</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Nombre d'élèves -->
+            <div>
+              <label for="studentCount" class="block text-xs font-bold uppercase tracking-wider text-brand-grey dark:text-gray-300 mb-1.5">
+                Nombre approximatif d'élèves (6e à Tle) *
+              </label>
+              <select 
+                id="studentCount" 
+                name="studentCount" 
+                required 
+                class="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-brand-borderdark bg-gray-50 dark:bg-brand-dark focus:bg-white dark:focus:bg-brand-dark focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 outline-none text-sm transition-all"
+              >
+                <option value="Moins de 200 élèves">Moins de 200 élèves</option>
+                <option value="200 à 500 élèves" selected>200 à 500 élèves</option>
+                <option value="500 à 1 000 élèves">500 à 1 000 élèves</option>
+                <option value="Plus de 1 000 élèves">Plus de 1 000 élèves (Grand groupe)</option>
+              </select>
+            </div>
+
+            <!-- Bouton de soumission -->
+            <button 
+              type="submit" 
+              id="submitDemoBtn" 
+              class="w-full py-4 px-6 rounded-2xl bg-brand-red hover:bg-brand-darkred text-white font-heading font-extrabold text-base shadow-lg shadow-brand-red/30 hover:shadow-xl hover:shadow-brand-red/50 hover:-translate-y-0.5 active:translate-y-0 transition-all flex items-center justify-center gap-2"
+            >
+              <span>Envoyer ma demande de démo gratuite</span>
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </button>
+
+            <p class="text-[11px] text-center text-brand-grey dark:text-gray-400 mt-2">
+              🔒 Vos données restent strictement confidentielles. Zéro spam.
+            </p>
+
+          </form>
+
+          <!-- Message de confirmation de soumission (Initialement caché) -->
+          <div id="formSuccessMessage" class="hidden p-6 bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-300 dark:border-emerald-800 rounded-2xl text-center space-y-3">
+            <div class="w-12 h-12 rounded-full bg-emerald-500 text-white flex items-center justify-center mx-auto text-xl font-bold">✓</div>
+            <h4 class="text-lg font-bold text-emerald-800 dark:text-emerald-300">Demande enregistrée avec succès !</h4>
+            <p class="text-xs text-emerald-700 dark:text-emerald-400 leading-relaxed">
+              Jërëjëf ! Notre conseiller pédagogique pour le Sénégal vous contactera sur WhatsApp au numéro indiqué sous quelques heures pour activer vos accès.
+            </p>
+            <div class="pt-2">
+              <a href="https://wa.me/221766297742?text=Bonjour%2C%20je%20viens%20d%27envoyer%20une%20demande%20de%20d%C3%A9mo%20sur%20votre%20site" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-bold text-emerald-800 dark:text-emerald-200 underline">
+                Accélérer le traitement sur WhatsApp immédiat &rarr;
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================================================= -->
+  <!-- 14. PIED DE PAGE (ROUGE FONCÉ #9B1C1C)                                    -->
+  <!-- ========================================================================= -->
+  <footer class="bg-brand-darkred text-white border-t border-brand-red/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-white/10">
+        
+        <!-- Colonne 1 & 2 : Marque & Mission -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-white text-brand-red flex items-center justify-center font-bold shadow">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14v7" />
+              </svg>
+            </div>
+            <span class="font-heading font-black text-2xl tracking-tight text-white">
+              AME BAC AK BFEM
+            </span>
+          </div>
+
+          <p class="text-xs text-red-100 leading-relaxed max-w-sm">
+            La première plateforme e-learning sénégalaise conçue pour garantir la réussite des collégiens et lycéens aux examens d'État du BFEM et du Baccalauréat.
+          </p>
+
+          <div class="text-xs text-red-200 space-y-1">
+            <p>📍 Siège : Almadies, Route de Ngor, Dakar - Sénégal</p>
+            <p>📞 Téléphone &amp; WhatsApp : <a href="https://wa.me/221766297742" class="underline font-bold text-white hover:text-red-100">+221 76 629 77 42</a></p>
+            <p>✉️ Email : <a href="mailto:contact@amebacakbfem.sn" class="underline text-white">contact@amebacakbfem.sn</a></p>
+          </div>
+        </div>
+
+        <!-- Colonne 3 : Navigation Rapide -->
+        <div class="space-y-3">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-red-200">Plateforme</h4>
+          <ul class="space-y-2 text-xs text-red-100">
+            <li><a href="#fonctionnalites" class="hover:text-white transition-colors">Fonctionnalités Clés</a></li>
+            <li><a href="#niveaux" class="hover:text-white transition-colors">Programme Collège (BFEM)</a></li>
+            <li><a href="#niveaux" class="hover:text-white transition-colors">Programme Lycée (Bac S &amp; L)</a></li>
+            <li><a href="#tarifs" class="hover:text-white transition-colors">Tarifs &amp; Devis Écoles</a></li>
+            <li><a href="#comment-ca-marche" class="hover:text-white transition-colors">Guide de Déploiement</a></li>
+          </ul>
+        </div>
+
+        <!-- Colonne 4 : Profils -->
+        <div class="space-y-3">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-red-200">Espaces Dédiés</h4>
+          <ul class="space-y-2 text-xs text-red-100">
+            <li><a href="#profils" class="hover:text-white transition-colors">Espace Directeurs</a></li>
+            <li><a href="#profils" class="hover:text-white transition-colors">Espace Enseignants</a></li>
+            <li><a href="#profils" class="hover:text-white transition-colors">Espace Parents WhatsApp</a></li>
+            <li><a href="#profils" class="hover:text-white transition-colors">Espace Élèves</a></li>
+            <li><a href="#faq" class="hover:text-white transition-colors">FAQ &amp; Support Technique</a></li>
+          </ul>
+        </div>
+
+        <!-- Colonne 5 : Sécurité & Paiement -->
+        <div class="space-y-3">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-red-200">Modes de Paiement</h4>
+          <p class="text-xs text-red-100">Paiements locaux et internationaux sécurisés :</p>
+          <div class="flex flex-wrap gap-2 text-xs font-bold">
+            <span class="px-2.5 py-1 rounded bg-white/10 text-white">Wave</span>
+            <span class="px-2.5 py-1 rounded bg-white/10 text-white">Orange Money</span>
+            <span class="px-2.5 py-1 rounded bg-white/10 text-white">Free Money</span>
+            <span class="px-2.5 py-1 rounded bg-white/10 text-white">Visa / Mastercard</span>
+          </div>
+          <div class="pt-2 text-[11px] text-red-200">
+            Plateforme conforme aux normes de la Commission des Données Personnelles (CDP) du Sénégal.
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Copyright & Mentions légales -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-red-200">
+        <p>© 2026 AME BAC AK BFEM. Tous droits réservés. Programme officiel du Ministère de l'Éducation Nationale du Sénégal.</p>
+        <div class="flex items-center gap-6">
+          <a href="#" class="hover:text-white transition-colors">Mentions Légales</a>
+          <a href="#" class="hover:text-white transition-colors">Politique de Confidentialité</a>
+          <a href="#" class="hover:text-white transition-colors">Conditions Générales Établissements</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- ========================================================================= -->
+  <!-- 15. BOUTON WHATSAPP FLOTTANT (VERT OFFICIEL #25D366)                      -->
+  <!-- ========================================================================= -->
+  <div class="fixed bottom-6 right-6 z-50 flex items-center group">
+    
+    <!-- Info-bulle d'invitation -->
+    <a 
+      href="https://wa.me/221766297742?text=Bonjour%2C%20je%20souhaite%20une%20d%C3%A9mo%20de%20AME%20BAC%20AK%20BFEM" 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      class="hidden sm:flex items-center gap-2 mr-3 px-3.5 py-2 rounded-2xl bg-white dark:bg-brand-carddark text-brand-charcoal dark:text-white shadow-xl border border-gray-100 dark:border-brand-borderdark text-xs font-bold hover:text-brand-red transition-all duration-200"
+    >
+      <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+      <span>Besoin d'une démo ? Discutons sur WhatsApp !</span>
+    </a>
+
+    <!-- Bouton Circulaire Flottant -->
+    <a 
+      href="https://wa.me/221766297742?text=Bonjour%2C%20je%20souhaite%20une%20d%C3%A9mo%20de%20AME%20BAC%20AK%20BFEM" 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      aria-label="Contacter AME BAC AK BFEM sur WhatsApp au +221 76 629 77 42"
+      class="relative w-14 h-14 rounded-full bg-[#25D366] hover:bg-[#20bd5a] text-white flex items-center justify-center shadow-xl hover:scale-110 active:scale-95 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-green-300"
+    >
+      <!-- Radar Pulse -->
+      <span class="absolute inset-0 rounded-full bg-[#25D366] animate-ping-slow opacity-75"></span>
+      
+      <!-- Icône WhatsApp -->
+      <svg class="w-7 h-7 fill-current relative z-10" viewBox="0 0 24 24">
+        <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.071.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.073.043.42-.101.825z"/>
+        <path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2.05 22l4.978-1.306A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.697 0-3.275-.516-4.595-1.398l-.329-.22-2.955.775.789-2.88-.242-.385A8.136 8.136 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/>
+      </svg>
+      
+      <!-- Pastille de notification "1" -->
+      <span class="absolute top-0 right-0 w-4 h-4 bg-brand-red text-white text-[10px] font-bold rounded-full flex items-center justify-center border-2 border-white">
+        1
+      </span>
+    </a>
+  </div>
+
+
+  <!-- ========================================================================= -->
+  <!-- MODAL : ESSAI GRATUIT 14 JOURS                                            -->
+  <!-- ========================================================================= -->
+  <div id="trialModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-brand-charcoal/70 backdrop-blur-xs hidden transition-opacity">
+    <div class="bg-white dark:bg-brand-carddark max-w-lg w-full rounded-3xl p-6 sm:p-8 shadow-2xl border border-gray-100 dark:border-brand-borderdark relative transform transition-transform">
+      <button type="button" id="closeTrialModalBtn" class="absolute top-5 right-5 p-2 rounded-xl text-gray-400 hover:text-brand-charcoal dark:hover:text-white hover:bg-gray-100 dark:hover:bg-brand-dark transition-colors" aria-label="Fermer la boîte de dialogue">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+
+      <div class="text-center space-y-3 mb-6">
+        <div class="w-12 h-12 rounded-2xl bg-brand-lightred dark:bg-brand-red/20 text-brand-red flex items-center justify-center mx-auto text-xl font-bold">
+          🎓
+        </div>
+        <h3 class="text-2xl font-heading font-extrabold text-brand-charcoal dark:text-white">Activez votre essai gratuit de 14 jours</h3>
+        <p class="text-xs text-brand-grey dark:text-gray-300">
+          Sans carte bancaire ni engagement. Testez AME BAC AK BFEM avec vos enseignants et une classe de votre choix.
+        </p>
+      </div>
+
+      <div class="space-y-3">
+        <a href="#demo-form" onclick="document.getElementById('trialModal').classList.add('hidden')" class="w-full py-3.5 px-4 rounded-xl bg-brand-red text-white font-bold text-sm text-center block shadow-md hover:bg-brand-darkred">
+          Remplir le formulaire école &rarr;
+        </a>
+        <a href="https://wa.me/221766297742?text=Bonjour%2C%20je%20souhaite%20activer%20l%27essai%20gratuit%20de%2014%20jours%20pour%20mon%20%C3%A9cole" target="_blank" rel="noopener noreferrer" class="w-full py-3 px-4 rounded-xl border border-green-600 text-green-600 dark:text-green-400 font-bold text-sm text-center flex items-center justify-center gap-2">
+          <span>Activation instantanée via WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ========================================================================= -->
+  <!-- JAVASCRIPT VANILLA INTERACTIF & ULTRA PERFORMANT                          -->
+  <!-- ========================================================================= -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // -------------------------------------------------------------
+      // 1. Thème Sombre / Clair avec mémorisation localStorage
+      // -------------------------------------------------------------
+      const htmlElem = document.documentElement;
+      const themeToggleBtn = document.getElementById('themeToggleBtn');
+      const themeToggleMobile = document.getElementById('themeToggleMobile');
+      const themeIconSun = document.getElementById('themeIconSun');
+      const themeIconMoon = document.getElementById('themeIconMoon');
+
+      const applyTheme = (isDark) => {
+        if (isDark) {
+          htmlElem.classList.add('dark');
+          themeIconSun.classList.remove('hidden');
+          themeIconMoon.classList.add('hidden');
+          localStorage.setItem('theme', 'dark');
+        } else {
+          htmlElem.classList.remove('dark');
+          themeIconSun.classList.add('hidden');
+          themeIconMoon.classList.remove('hidden');
+          localStorage.setItem('theme', 'light');
+        }
+      };
+
+      const savedTheme = localStorage.getItem('theme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      applyTheme(savedTheme === 'dark' || (!savedTheme && prefersDark));
+
+      const toggleThemeAction = () => {
+        const isDark = htmlElem.classList.contains('dark');
+        applyTheme(!isDark);
+      };
+
+      if (themeToggleBtn) themeToggleBtn.addEventListener('click', toggleThemeAction);
+      if (themeToggleMobile) themeToggleMobile.addEventListener('click', toggleThemeAction);
+
+
+      // -------------------------------------------------------------
+      // 2. Menu Mobile Burger Drawer
+      // -------------------------------------------------------------
+      const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+      const mobileMenuDrawer = document.getElementById('mobileMenuDrawer');
+      const burgerIconOpen = document.getElementById('burgerIconOpen');
+      const burgerIconClose = document.getElementById('burgerIconClose');
+      const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+      const toggleMobileMenu = () => {
+        const isClosed = mobileMenuDrawer.classList.contains('hidden');
+        if (isClosed) {
+          mobileMenuDrawer.classList.remove('hidden');
+          burgerIconOpen.classList.add('hidden');
+          burgerIconClose.classList.remove('hidden');
+          mobileMenuBtn.setAttribute('aria-expanded', 'true');
+        } else {
+          mobileMenuDrawer.classList.add('hidden');
+          burgerIconOpen.classList.remove('hidden');
+          burgerIconClose.classList.add('hidden');
+          mobileMenuBtn.setAttribute('aria-expanded', 'false');
+        }
+      };
+
+      if (mobileMenuBtn) {
+        mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+      }
+
+      mobileNavLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenuDrawer.classList.add('hidden');
+          burgerIconOpen.classList.remove('hidden');
+          burgerIconClose.classList.add('hidden');
+          mobileMenuBtn.setAttribute('aria-expanded', 'false');
+        });
+      });
+
+
+      // -------------------------------------------------------------
+      // 3. Sélecteur de Variantes de Titres du Hero (Copywriting)
+      // -------------------------------------------------------------
+      const headlineButtons = document.querySelectorAll('.headline-variant-btn');
+      const headlines = {
+        'variant-1': document.getElementById('hero-title-variant-1'),
+        'variant-2': document.getElementById('hero-title-variant-2'),
+        'variant-3': document.getElementById('hero-title-variant-3')
+      };
+
+      headlineButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          headlineButtons.forEach(b => {
+            b.classList.remove('bg-white', 'dark:bg-brand-dark', 'text-brand-red', 'font-semibold', 'shadow-xs');
+            b.classList.add('text-brand-grey', 'dark:text-gray-300');
+          });
+          btn.classList.add('bg-white', 'dark:bg-brand-dark', 'text-brand-red', 'font-semibold', 'shadow-xs');
+          btn.classList.remove('text-brand-grey', 'dark:text-gray-300');
+
+          const targetId = btn.getAttribute('data-target');
+          Object.keys(headlines).forEach(key => {
+            if (key === targetId) {
+              headlines[key].classList.remove('hidden');
+            } else {
+              headlines[key].classList.add('hidden');
+            }
+          });
+        });
+      });
+
+
+      // -------------------------------------------------------------
+      // 4. Onglets Niveaux : Collège vs Lycée
+      // -------------------------------------------------------------
+      const tabCollegeBtn = document.getElementById('tabCollegeBtn');
+      const tabLyceeBtn = document.getElementById('tabLyceeBtn');
+      const tabContentCollege = document.getElementById('tabContentCollege');
+      const tabContentLycee = document.getElementById('tabContentLycee');
+
+      if (tabCollegeBtn && tabLyceeBtn) {
+        tabCollegeBtn.addEventListener('click', () => {
+          tabCollegeBtn.classList.add('bg-brand-red', 'text-white', 'shadow-md');
+          tabCollegeBtn.classList.remove('text-brand-grey', 'dark:text-gray-300');
+          tabCollegeBtn.setAttribute('aria-selected', 'true');
+
+          tabLyceeBtn.classList.remove('bg-brand-red', 'text-white', 'shadow-md');
+          tabLyceeBtn.classList.add('text-brand-grey', 'dark:text-gray-300');
+          tabLyceeBtn.setAttribute('aria-selected', 'false');
+
+          tabContentCollege.classList.remove('hidden');
+          tabContentLycee.classList.add('hidden');
+        });
+
+        tabLyceeBtn.addEventListener('click', () => {
+          tabLyceeBtn.classList.add('bg-brand-red', 'text-white', 'shadow-md');
+          tabLyceeBtn.classList.remove('text-brand-grey', 'dark:text-gray-300');
+          tabLyceeBtn.setAttribute('aria-selected', 'true');
+
+          tabCollegeBtn.classList.remove('bg-brand-red', 'text-white', 'shadow-md');
+          tabCollegeBtn.classList.add('text-brand-grey', 'dark:text-gray-300');
+          tabCollegeBtn.setAttribute('aria-selected', 'false');
+
+          tabContentLycee.classList.remove('hidden');
+          tabContentCollege.classList.add('hidden');
+        });
+      }
+
+
+      // -------------------------------------------------------------
+      // 5. Onglets Section Profils (Directeur, Enseignant, Parent, Élève)
+      // -------------------------------------------------------------
+      const profileButtons = document.querySelectorAll('.profile-tab-btn');
+      const profilePanels = {
+        'directeur': document.getElementById('profile-directeur'),
+        'enseignant': document.getElementById('profile-enseignant'),
+        'parent': document.getElementById('profile-parent'),
+        'eleve': document.getElementById('profile-eleve')
+      };
+
+      profileButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const profile = btn.getAttribute('data-profile');
+
+          profileButtons.forEach(b => {
+            b.classList.remove('bg-brand-red', 'text-white', 'shadow-sm');
+            b.classList.add('text-brand-grey', 'dark:text-gray-300');
+          });
+
+          btn.classList.add('bg-brand-red', 'text-white', 'shadow-sm');
+          btn.classList.remove('text-brand-grey', 'dark:text-gray-300');
+
+          Object.keys(profilePanels).forEach(key => {
+            if (key === profile) {
+              profilePanels[key].classList.remove('hidden');
+            } else {
+              profilePanels[key].classList.add('hidden');
+            }
+          });
+        });
+      });
+
+
+      // -------------------------------------------------------------
+      // 6. Animation des Compteurs Chiffres Clés au Scroll (Intersection Observer)
+      // -------------------------------------------------------------
+      const counterElements = document.querySelectorAll('.counter-val');
+      let countersStarted = false;
+
+      const animateCounters = () => {
+        counterElements.forEach(el => {
+          const target = parseFloat(el.getAttribute('data-target'));
+          const isDecimal = el.getAttribute('data-decimal') === '1';
+          const duration = 2000;
+          const startTime = performance.now();
+
+          const updateCounter = (currentTime) => {
+            const elapsed = currentTime - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            
+            // Ease out quart
+            const easeOutProgress = 1 - Math.pow(1 - progress, 4);
+            const currentVal = target * easeOutProgress;
+
+            if (isDecimal) {
+              el.textContent = currentVal.toFixed(1);
+            } else if (target >= 1000) {
+              el.textContent = Math.floor(currentVal).toLocaleString('fr-FR');
+            } else {
+              el.textContent = Math.floor(currentVal);
+            }
+
+            if (progress < 1) {
+              requestAnimationFrame(updateCounter);
+            } else {
+              if (isDecimal) {
+                el.textContent = target.toFixed(1);
+              } else if (target >= 1000) {
+                el.textContent = target.toLocaleString('fr-FR');
+              } else {
+                el.textContent = target;
+              }
+            }
+          };
+
+          requestAnimationFrame(updateCounter);
+        });
+      };
+
+      const chiffresSection = document.getElementById('chiffres-cles');
+      if (chiffresSection && 'IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting && !countersStarted) {
+              countersStarted = true;
+              animateCounters();
+            }
+          });
+        }, { threshold: 0.3 });
+        observer.observe(chiffresSection);
+      } else {
+        animateCounters();
+      }
+
+
+      // -------------------------------------------------------------
+      // 7. Sélecteur Tarifs Mensuel / Annuel
+      // -------------------------------------------------------------
+      const billingToggle = document.getElementById('billingPeriodToggle');
+      const toggleBall = document.getElementById('billingToggleBall');
+      const priceVals = document.querySelectorAll('.price-val');
+      const priceUnits = document.querySelectorAll('.price-unit');
+      let isAnnual = true; // Par défaut annuel
+
+      if (billingToggle) {
+        billingToggle.addEventListener('click', () => {
+          isAnnual = !isAnnual;
+          if (isAnnual) {
+            toggleBall.classList.add('translate-x-6');
+            toggleBall.classList.remove('translate-x-0');
+            priceVals.forEach(el => {
+              el.textContent = el.getAttribute('data-annual');
+            });
+            priceUnits.forEach(el => {
+              el.textContent = '/ élève / an';
+            });
+          } else {
+            toggleBall.classList.remove('translate-x-6');
+            toggleBall.classList.add('translate-x-0');
+            priceVals.forEach(el => {
+              el.textContent = el.getAttribute('data-monthly');
+            });
+            priceUnits.forEach(el => {
+              el.textContent = '/ élève / mois';
+            });
+          }
+        });
+      }
+
+
+      // -------------------------------------------------------------
+      // 8. FAQ Accordéon Accessible
+      // -------------------------------------------------------------
+      const faqToggles = document.querySelectorAll('.faq-toggle');
+
+      faqToggles.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+          const content = btn.nextElementSibling;
+          const chevron = btn.querySelector('.faq-chevron');
+
+          // Fermer les autres (optionnel, améliore la propreté)
+          faqToggles.forEach(otherBtn => {
+            if (otherBtn !== btn) {
+              otherBtn.setAttribute('aria-expanded', 'false');
+              otherBtn.nextElementSibling.classList.add('hidden');
+              otherBtn.querySelector('.faq-chevron').classList.remove('rotate-180');
+            }
+          });
+
+          if (isExpanded) {
+            btn.setAttribute('aria-expanded', 'false');
+            content.classList.add('hidden');
+            chevron.classList.remove('rotate-180');
+          } else {
+            btn.setAttribute('aria-expanded', 'true');
+            content.classList.remove('hidden');
+            chevron.classList.add('rotate-180');
+          }
+        });
+      });
+
+
+      // -------------------------------------------------------------
+      // 9. Validation du Formulaire de Démo & Simulation Réussie
+      // -------------------------------------------------------------
+      const demoForm = document.getElementById('demoRequestForm');
+      const formSuccessMessage = document.getElementById('formSuccessMessage');
+
+      if (demoForm) {
+        demoForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          let isValid = true;
+
+          const requiredInputs = demoForm.querySelectorAll('[required]');
+          requiredInputs.forEach(input => {
+            const errorMsg = input.parentElement.querySelector('.error-msg');
+            if (!input.value.trim()) {
+              isValid = false;
+              input.classList.add('border-brand-red');
+              if (errorMsg) errorMsg.classList.remove('hidden');
+            } else {
+              input.classList.remove('border-brand-red');
+              if (errorMsg) errorMsg.classList.add('hidden');
+            }
+          });
+
+          if (isValid) {
+            const submitBtn = document.getElementById('submitDemoBtn');
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<span>Transmission en cours...</span>';
+
+            setTimeout(() => {
+              demoForm.classList.add('hidden');
+              formSuccessMessage.classList.remove('hidden');
+            }, 800);
+          }
+        });
+      }
+
+
+      // -------------------------------------------------------------
+      // 10. Modale Essai Gratuit (14 Jours)
+      // -------------------------------------------------------------
+      const openTrialModalBtn = document.getElementById('openTrialModalBtn');
+      const closeTrialModalBtn = document.getElementById('closeTrialModalBtn');
+      const trialModal = document.getElementById('trialModal');
+
+      if (openTrialModalBtn && trialModal) {
+        openTrialModalBtn.addEventListener('click', () => {
+          trialModal.classList.remove('hidden');
+        });
+      }
+
+      if (closeTrialModalBtn && trialModal) {
+        closeTrialModalBtn.addEventListener('click', () => {
+          trialModal.classList.add('hidden');
+        });
+      }
+
+      if (trialModal) {
+        trialModal.addEventListener('click', (e) => {
+          if (e.target === trialModal) {
+            trialModal.classList.add('hidden');
+          }
+        });
+      }
+
+    });
+  </script>
+</body>
+</html>
